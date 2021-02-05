@@ -7,7 +7,7 @@ Redesigned website for the London Referees Group. The site currently has three m
 
 ## Collaborators
 
-#### Project Management - Elain
+#### Project Management - Elaine
 
 #### Graphic Design - Cindy
 
