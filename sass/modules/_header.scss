@@ -1,0 +1,46 @@
+
+.main-header{
+    padding: 30px 0;
+    h2{
+        color: white;
+    }
+    nav{
+        ul{
+            margin-right: 200px;
+            list-style-type: none;
+            li{
+                margin: 0 20px;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #ddd;
+                    font-size: 18px;
+                    &.active{
+                        color: white;
+                        border-bottom: 2px solid #CC0000;
+                    }
+                }
+            }
+        }
+        .btns{
+            a{
+                text-decoration: none;
+                line-height: 50px;
+                display: inline-block;
+                width: 150px;
+                text-align: center;
+                border-radius: 50px;
+    
+                &:nth-child(1){
+                    background-color: white;
+                    color: black;
+                    margin-right: 20px;
+                }
+                &:nth-child(2){
+                    background-image: linear-gradient(to bottom, #BA0101, #1A1010);
+                    color: white;
+                }
+            }
+        }
+    }
+}
