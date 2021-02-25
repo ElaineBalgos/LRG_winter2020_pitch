@@ -1,4 +1,10 @@
-@import './modules/reset';
-@import './modules/global';
-@import './modules/header';
-@import './modules/footer';
+//out: ../css/main.css
+@import './modules/_reset';
+@import './modules/_global';
+@import './modules/_header';
+@import './modules/_footer';
+@import './modules/_index';
+@import './modules/_about';
+@import './modules/_contact';
+@import './modules/_program';
+@import './modules/_login';
