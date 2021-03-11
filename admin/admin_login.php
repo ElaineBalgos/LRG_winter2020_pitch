@@ -47,10 +47,9 @@ if(isset($_POST["submit"])) {
                         <a href="./contact.html">Forgot your password?</a>
                     </div>
                 </div>
-                <!-- <div class="btn">
-                    <input type="text" value="Submit" onclick="location.href='./index.html'">
-                </div> -->
-                <button type="submit" name="submit"> Login </button>
+                <div class="btn">
+                    <input type="submit" value="Login" name="submit">
+                </div>
             </form>
             <div class="info">
                 <p>Don't have an account?</p>
