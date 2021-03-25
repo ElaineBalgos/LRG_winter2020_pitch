@@ -1,0 +1,292 @@
+.about {
+
+    main {
+
+        .slogn {
+            margin-top: 10px;
+            font-size : 0;
+
+            video {
+                width: 100%;
+            }
+        }
+
+        .our-story {
+            background-color: #202020;
+            padding         : 100px 0;
+
+            .title {
+                margin-bottom: 50px;
+
+                h2 {
+                    color     : #970404;
+                    font-size : 48px;
+                    text-align: center;
+                }
+
+            }
+
+            .content {
+
+                .item {
+
+                    width: 49%;
+
+                    p {
+                        color        : #ddd;
+                        margin-bottom: 20px;
+                        line-height  : 2;
+                        font-size    : 17px;
+                    }
+                }
+            }
+
+        }
+
+
+        .our-commitment {
+            background-color: #121212;
+            padding         : 50px;
+
+            h2 {
+                color        : #970404;
+                font-size    : 48px;
+                margin-bottom: 50px;
+            }
+
+            .content {
+
+                h3 {
+                    color        : white;
+                    font-size    : 30px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size  : 18px;
+                    line-height: 1.8;
+                    color      : #ddd;
+                    margin     : auto;
+                }
+
+                .top {
+                    display        : flex;
+                    justify-content: space-between;
+                    height         : 240px;
+                    margin-bottom  : 2%;
+
+                    div {
+                        background-color: #CB2025;
+                    }
+
+                    .left {
+                        width  : 68%;
+                        padding: 20px;
+                    }
+
+                    .right {
+                        width  : 30%;
+                        padding: 20px;
+                    }
+                }
+
+                .bottom {
+                    display        : flex;
+                    justify-content: space-between;
+
+                    .left {
+                        width: 68%;
+
+                        .lt {
+                            margin-bottom: 2%;
+                            height       : 240px;
+
+                            .lt-l {
+                                background-color: #3D3D3D;
+                                width           : 49%;
+                                padding         : 20px;
+                            }
+
+                            .lt-r {
+                                background-color: #CB2025;
+                                width           : 49%;
+                                padding         : 20px;
+                            }
+                        }
+
+                        .lb {
+                            background-color: #CB2025;
+                            height          : 240px;
+                            padding         : 20px;
+                        }
+                    }
+
+                    .right {
+                        width           : 30%;
+                        background-color: #3D3D3D;
+                        height          : 496px;
+                        padding         : 20px;
+                    }
+                }
+            }
+        }
+
+        .our-services {
+            background-color: #212121;
+            padding         : 50px;
+
+            .title {
+                margin-bottom: 50px;
+
+                h2 {
+                    color    : #970404;
+                    font-size: 48px;
+                }
+
+            }
+
+            .content {
+
+                .item {
+                    width: 320px;
+                }
+
+                h3 {
+                    font-size: 30px;
+                    color    : white;
+                }
+
+                p {
+                    color        : #ddd;
+                    margin-bottom: 20px;
+                }
+
+                .img {
+                    img {
+                        width : 320px;
+                        height: 240px;
+                    }
+                }
+
+
+            }
+
+            .btn {
+                text-align: center;
+                margin-top: 50px;
+
+                .link1 {
+                    color    : #970404;
+                    font-size: 30px;
+                }
+
+                .link2 {
+                    display         : none;
+                    text-decoration : none;
+                    font-size       : 18px;
+                    padding         : 10px 50px;
+                    text-align      : center;
+                    color           : white;
+                    background-image: linear-gradient(to right, #CC0913, #F07A34);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .about {
+        main {
+            .slogn {
+                margin-top: 0;
+            }
+
+            .our-story {
+                padding: 50px 20px;
+
+                .content {
+                    display: block;
+
+                    .item {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .our-commitment {
+                padding: 50px 0 0;
+                .flex-between{
+                    display: block;
+                }
+                .title{
+                    text-align: center;
+                }
+                .content{
+                    .top{
+                        display: block;
+                        height: auto;
+                        .left{
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        .right{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            background-color: #3D3D3D;
+                        }
+                    }
+                    .bottom{
+                        display: block;
+                        .left{
+                            width: 100%;
+                            .lt{
+                                height: auto;
+                                .lt-l{
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                    background-color: #CB2025;
+                                }
+                                .lt-r{
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                    background-color: #3D3D3D;
+                                }
+                            }
+                            .lb{
+                                height: auto;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .right{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .our-services {
+                padding   : 50px 10px;
+                text-align: center;
+
+                .content {
+                    display: block;
+
+                    .item {
+                        width        : 100%;
+                        margin-bottom: 40px;
+                    }
+                }
+                .btn{
+                    .link1{
+                        display: none;
+                    }
+                    .link2{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

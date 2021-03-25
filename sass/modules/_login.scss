@@ -1,0 +1,120 @@
+
+.login {
+    background-image : url(../img/login-bg.png);
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+    min-height       : 100vh;
+
+    .main-header {
+        display: none;
+    }
+
+    .top {
+        color    : white;
+        width    : 90%;
+        margin   : auto;
+        padding  : 20px 0 20px;
+        font-size: 50px;
+        img{
+            height: 60px;
+        }
+    }
+
+    .login-box {
+        background-color: rgba(43, 43, 43, 0.8);
+        width           : 500px;
+        margin          : auto;
+        padding         : 10px 50px;
+
+        h2 {
+            color        : white;
+            font-size    : 32px;
+            text-align   : center;
+            margin-bottom: 20px;
+        }
+
+        .img {
+            text-align   : center;
+            margin-bottom: 10px;
+
+            img {
+                height: 100px;
+            }
+        }
+
+        form {
+            .item {
+                margin-bottom: 20px;
+
+                input {
+                    padding      : 10px;
+                    width        : 100%;
+                    border-radius: 6px;
+                    border-color : white;
+                    color        : black;
+                }
+            }
+
+            .link {
+                text-align: center;
+
+                a {
+                    color          : #970404;
+                    font-size      : 20px;
+                    text-decoration: none;
+                }
+            }
+
+            .btn {
+                text-align   : center;
+                margin-top   : 50px;
+                margin-bottom: 40px;
+
+                input {
+                    display         : inline-block;
+                    font-size       : 17px;
+                    width           : 100%;
+                    padding         : 10px 0;
+                    text-align      : center;
+                    color           : white;
+                    border          : none;
+                    background-image: linear-gradient(to right, #CC0913, #F07A34);
+                    cursor          : pointer;
+                    background-color: transparent;
+                    font-size       : 24PX;
+                }
+            }
+        }
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .login {
+        background-image: none;
+        background-color: #121212;
+
+        .main-header {
+            display: block;
+        }
+
+        .top {
+            display: none;
+        }
+
+        .login-box {
+            background-color: transparent;
+            width           : 100%;
+            h2{
+                display: none;
+            }
+        }
+
+        footer {
+            display: block;
+        }
+    }
+}
