@@ -22,7 +22,7 @@ services:
       - 8889:3306
     environment:
       TZ: America/Toronto
-      MYSQL_DATABASE: db_movies
+      MYSQL_DATABASE: db_lrg
       MYSQL_USER: docker_u
       MYSQL_PASSWORD: docker_p
       MYSQL_ROOT_PASSWORD: root
@@ -38,6 +38,12 @@ services:
       PMA_USER: docker_u
       PMA_PASSWORD: docker_p
       PMA_HOSTS: mysql
+
+  email:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
 
 volumes:
   mysql:

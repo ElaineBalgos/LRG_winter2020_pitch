@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="page" class="profile">
+        <header class="main-header log-in">
+            <div class="container flex-between">
+                <h2><a href="./index.html"><img src="./img/logo.png" alt=""></a></h2>
+                <nav class="flex-align-center">
+                    <ul class="flex menus">
+                        <li><a href="./profile.html" class="active">PROFILE</a></li>
+                        <li><a href="./virtual.html">VIRTUAL</a></li>
+                        <li><a href="./task.html">TASK</a></li>
+                        <li><a href="./reminder.html">REMINDER</a></li>
+                    </ul>
+                    <div class="menus-mobile">
+                        <div class="menu-icon"><img src="./img/menu.png" alt=""></div>
+                        <ul class="flex menus-list">
+                            <li><a href="./profile.html">PROFILE</a></li>
+                            <li><a href="./virtual.html">VIRTUAL</a></li>
+                            <li><a href="./task.html">TASK</a></li>
+                            <li><a href="./reminder.html">REMINDER</a></li>
+                        </ul>
+                    </div>
+                    <div class="btns" id="logout"> 
+                        <a href="#" class="hoverable">
+                            <div class="anim" ></div>LOG OUT
+                        </a>
+                    </div>
+                    <div class="imgs flex">
+                        <div class="img flex-center-center"><a href="#"><img src="./img/profile.png" alt=""></a></div>
+                        <p>John Doe</p>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container flex">
+                <h2 class="title">Personal Details</h2>
+                <div class="left">
+                    <img src="./img/profile.png" alt="">
+                </div>
+                <div class="right">
+                    <h2>Personal Details</h2>
+                    <div>
+                        <form>
+                            <p id="msg"></p>
+                            <p><span>First name</span><span id="fname">John</span></p>
+                            <p><span>Last name</span><span id="lname">Doe</span></p>
+                            <p><span>Username</span><span><input type="text" id="uname"></span></p>
+                            <p><span>Password</span><span><input type="text" id="pword" placeholder="*******"></span></p>
+                            <p><span>Email</span><span><input type="text" id="email"></span></p>
+                            <!-- <p><span>DOB</span><span>1989-12-25</span></p> -->
+                            <p><span>Gender</span><span>
+                                <select id="gender">
+                                    <option value="0">Male</option>
+                                    <option value="1">Female</option>
+                                    <option value="2">Other</option>
+                                </select>
+                            </span></p>
+                            <div class="btn">
+                                <input type="button" value="SAVE">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="map">
+                <div class="container flex-between">
+                    <div class="left">
+                        <h2><img src="./img/logo2.png" alt=""></h2>
+                        <p>+123 456 7890</p>
+                        <p>London, Ontario, Canada</p>
+                        <p>lrg@londonrefereesgroup.com</p>
+                    </div>
+                    <div class="right">
+                        <div class="nav flex">
+                            <div class="link"><a href="./index.html">Home</a></div>
+                            <div class="link"><a href="./about.html">About</a></div>
+                            <div class="link"><a href="./contact.html">Contact</a></div>
+                        </div>
+                        <div class="imgs flex">
+                            <div class="img flex-center-center"><a href="#"><img src="./img/facebook.png" alt=""></a></div>
+                            <div class="img flex-center-center"><a href="#"><img src="./img/instagram.png" alt=""></a></div>
+                            <div class="img flex-center-center"><a href="#"><img src="./img/linkedin.png" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                © 2020 LRG. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <!-- <script src="./js/account.js"></script> -->
+    <script src="./js/account.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

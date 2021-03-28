@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.3
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Mar 11, 2021 at 02:30 AM
--- Server version: 5.7.26
--- PHP Version: 7.4.2
+-- 主機： mysql
+-- 產生時間： 2021 年 03 月 28 日 17:17
+-- 伺服器版本： 10.3.27-MariaDB-1:10.3.27+maria~focal
+-- PHP 版本： 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_lrg`
+-- 資料庫： `db_lrg`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- 資料表結構 `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -31,36 +32,38 @@ CREATE TABLE `tbl_user` (
   `user_name` varchar(20) NOT NULL,
   `user_pass` varchar(20) NOT NULL,
   `user_fname` varchar(250) NOT NULL,
-  `user_sname` varchar(250) NOT NULL,
-  `user_email` varchar(250) NOT NULL
+  `user_lname` varchar(250) NOT NULL,
+  `user_email` varchar(250) NOT NULL,
+  `user_gender` varchar(24) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_user`
+-- 傾印資料表的資料 `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_fname`, `user_sname`, `user_email`) VALUES
-(1, 'admin', 'admin123', 'admin Firstname', 'admin Secondname', 'admin@gmail.com');
+INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_fname`, `user_lname`, `user_email`, `user_gender`) VALUES
+(1, 'admin', 'admin', 'John', 'Doe', 'admin@gmail.com', '0');
 
 --
--- Indexes for dumped tables
+-- 已傾印資料表的索引
 --
 
 --
--- Indexes for table `tbl_user`
+-- 資料表索引 `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
 --
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
