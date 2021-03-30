@@ -35,8 +35,7 @@ export default {
                 <div class="container">
                     <div class="title">
                         <h2>Our Programs</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                        <p>You will have three very interesting learning programs to choose from.</p>
                     </div>
                     <div class="list">
                         <div class="item flex-between-center">
@@ -82,39 +81,38 @@ export default {
                 <div class="container">
                     <div class="title">
                         <h2>Our Events</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</p>
+                        <p>Welcome to our most exciting event, which also records our daily work.</p>
                     </div>
                     <div class="imgs">
                         <div class="img1 flex-between">
                             <div class="left">
                                 <div class="hover-text"><img src="./img/ice-hockey-female-referee.jpg" alt="">
-                                    <div>hidden text</div>
+                                    <div>Female Referees Team</div>
                                 </div>
                                 <div class="flex-between">
                                     <div class="hover-text"><img src="./img/ice-hockey-player-in-action-PH832SW.jpg" alt="">
-                                        <div>hidden text</div>
+                                        <div>Cool Events</div>
                                     </div>
                                     <div class="hover-text"><img src="./img/hockey-team-getting-ready-TMSN6QL.jpg" alt="">
-                                        <div>hidden text</div>
+                                        <div>Preparation</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="right">
                                 <div class="hover-text"><img src="./img/ice-black-red-sport-hockey-referee_t20_eVXVRv.jpg" alt="">
-                                    <div>hidden text</div>
+                                    <div>Big Games</div>
                                 </div>
                                 <div class="hover-text"><img src="./img/father-and-son.jpg" alt="">
-                                    <div>hidden text</div>
+                                    <div>Private Training</div>
                                 </div>
                             </div>
                         </div>
                         <div class="img2 flex-between">
                             <div class="left hover-text"><img src="./img/following-the-referees-instructions-little-league-roller-hockey_t20_mvQYAl.jpg" alt="">
-                                <div>hidden text</div>
+                                <div>Pracitce in All Seasons</div>
                             </div>
                             <div class="right hover-text"><img src="./img/NQZkW1_t20_NQpywE.jpg" alt="">
-                                <div>hidden text</div>
+                                <div>Referees</div>
                             </div>
                         </div>
                     </div>
@@ -182,9 +180,7 @@ export default {
                     </div>
                     <div class="content flex-between-center">
                         <div class="text">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the</p>
-                            <p>industry’s standard dummy text ever since the 1500s.</p>
+                            <p>You will become an excellent referee! Join us and let us witness this wonderful and successful process together.</p>
                         </div>
                         <div class="btn">
                             <router-link :to="{ name: 'Login' }" class="hoverable">
