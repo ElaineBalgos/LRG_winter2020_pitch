@@ -1,6 +1,6 @@
 
 .reminder{
-    main{
+    // main{
         margin-top: 10px;
         background-color: #202020;
         color: white;
@@ -39,7 +39,7 @@
                 }
             }
         }
-    }
+    // }
     footer{
         .map{
             display: none;
@@ -54,7 +54,6 @@
                 background-color: #BE0711;
             }
         }
-        main{
             margin-top: 0;
             padding: 50px 0;
             h2{
@@ -71,7 +70,6 @@
                     }
                 }
             }
-        }
         footer{
             .map{
                 display: block;

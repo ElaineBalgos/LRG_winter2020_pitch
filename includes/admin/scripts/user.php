@@ -47,7 +47,7 @@ function createUser($user_data) {
 
         // Sending a confirmation email to new user
         $email_to = $user_data["email"];
-        $email_from = "londonrefereegroup@gmail.com";
+        $email_from = "lrg@londonrefereesgroup.com";
         $email_subject = "Register Confirmation Email";
         $email_message = sprintf("<html> <h2>Registration Confirmation</h2><p>Your username: %s </p><p>Password: %s</p><p>Registered Email: %s</p>", $username, $password, $user_data["email"]);
         $email_message .= "</html>";
@@ -62,7 +62,7 @@ function createUser($user_data) {
         $email_result = mail($email_to, $email_subject, $email_message, $email_headers);
 
         if (!($email_result)) { 
-            return "An confirmation email COULD NOT be sent to the registered email address.";
+            return "Username and password COULD NOT be sent to your email.";
         } else {
             return "Username and password are SUCCESSFULLY sent to your email. You can edit them after login.";
         }

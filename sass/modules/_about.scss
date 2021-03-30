@@ -1,6 +1,6 @@
 .about {
 
-    main {
+    // main {
 
         .slogn {
             margin-top: 10px;
@@ -210,13 +210,12 @@
                 opacity: 0.8;
             }
         }
-    }
+    // }
 }
 
 
 @media screen and (max-width: 720px) {
     .about {
-        main {
             .slogn {
                 margin-top: 0;
             }
@@ -295,6 +294,8 @@
                     .item {
                         width        : 100%;
                         margin-bottom: 40px;
+                        margin-left: 0;
+                        margin-right: 0;
                     }
                 }
                 .btn{
@@ -311,5 +312,4 @@
                 }
             }
         }
-    }
 }

@@ -104,6 +104,14 @@
   z-index: 0;
 }
 
+.hoverable:hover > .anim {
+  animation: anim-out 0.75s;
+}
+
+.hoverable:hover > .anim:after {
+  animation: anim-out-pseudo 0.75s;
+}
+
 .anim {
   transform: translateY(-50%) translateX(-50%);
   position: absolute;
@@ -173,8 +181,9 @@
   font-weight: bold;
   padding: 12px 20px;
 }
-.main-header nav .menus li a.active {
+.main-header nav .menus li a.router-link-exact-active {
   background-color: white;
+  color: #BE0500;
 }
 .main-header nav .menus-mobile {
   display: none;
@@ -190,6 +199,9 @@
   color: white;
   border: 3px solid #BE0500;
   border-image: linear-gradient(#CC0913, #F07A34) 20 20;
+}
+.main-header nav .btns:hover {
+  opacity: 0.8;
 }
 .main-header nav .imgs {
   margin-left: 20px;
@@ -254,6 +266,9 @@
   }
   .main-header nav .btns {
     display: none;
+  }
+  .main-header nav .btns:hover {
+    opacity: 0.8;
   }
   .main-header nav .imgs {
     display: none;
@@ -338,180 +353,183 @@ footer .info {
     justify-content: center;
   }
 }
-.home main .slogn {
+.home .slogn {
   margin-top: 10px;
   font-size: 0;
 }
-.home main .slogn video {
+.home .slogn video {
   width: 100%;
 }
-.home main .our-mission {
+.home .our-mission {
   background-color: #202020;
 }
-.home main .our-mission .container {
+.home .our-mission .container {
   align-items: flex-end;
   padding: 0 0 60px;
 }
-.home main .our-mission .item h2 {
+.home .our-mission .item h2 {
   color: #970404;
   font-size: 48px;
   padding-top: 60px;
   margin-bottom: 30px;
   text-align: center;
 }
-.home main .our-mission .item > div {
+.home .our-mission .item > div {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.home main .our-mission .item > div p {
+.home .our-mission .item > div p {
   color: #ddd;
   line-height: 1.8;
   font-size: 30px;
 }
-.home main .our-programs {
+.home .our-programs {
   background-color: #121212;
   padding: 50px;
 }
-.home main .our-programs .title {
+.home .our-programs .title {
   text-align: center;
   margin-bottom: 100px;
 }
-.home main .our-programs .title h2 {
+.home .our-programs .title h2 {
   color: #970404;
   font-size: 48px;
   margin-bottom: 20px;
 }
-.home main .our-programs .title p {
+.home .our-programs .title p {
   color: #ddd;
 }
-.home main .our-programs .list .item {
+.home .our-programs .list .item {
   color: #ddd;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
-.home main .our-programs .list .item .left h3 {
+.home .our-programs .list .item .left h3 {
   color: white;
   font-size: 24px;
   margin-bottom: 10px;
 }
-.home main .our-programs .list .item .left div {
+.home .our-programs .list .item .left div {
   font-size: 20px;
 }
-.home main .our-programs .list .item .left p {
+.home .our-programs .list .item .left p {
   color: gray;
 }
-.home main .our-programs .list .item a {
+.home .our-programs .list .item a {
   text-decoration: none;
   display: inline-block;
+  color: white;
+}
+.home .our-programs .list .item .apply-btn {
+  text-transform: uppercase;
   font-size: 18px;
   padding: 10px 50px;
   text-align: center;
-  color: white;
   background-image: linear-gradient(to right, #CC0913, #F07A34);
 }
-.home main .our-events {
+.home .our-events {
   background-color: #202020;
   padding: 50px 0;
 }
-.home main .our-events .title {
+.home .our-events .title {
   text-align: center;
 }
-.home main .our-events .title h2 {
+.home .our-events .title h2 {
   color: #970404;
   font-size: 48px;
   margin-bottom: 20px;
 }
-.home main .our-events .title p {
+.home .our-events .title p {
   color: #ddd;
   margin-bottom: 80px;
 }
-.home main .our-events .imgs .img1 .left {
+.home .our-events .imgs .img1 .left {
   width: 70%;
   margin-right: 20px;
 }
-.home main .our-events .imgs .img1 .left > div:nth-child(1) {
+.home .our-events .imgs .img1 .left > div:nth-child(1) {
   margin-bottom: 20px;
 }
-.home main .our-events .imgs .img1 .left > div:nth-child(1) img {
+.home .our-events .imgs .img1 .left > div:nth-child(1) img {
   width: 100%;
   height: 400px;
 }
-.home main .our-events .imgs .img1 .left > div:nth-child(2) > div {
+.home .our-events .imgs .img1 .left > div:nth-child(2) > div {
   width: 49%;
 }
-.home main .our-events .imgs .img1 .left > div:nth-child(2) > div:nth-child(1) {
+.home .our-events .imgs .img1 .left > div:nth-child(2) > div:nth-child(1) {
   margin-right: 20px;
 }
-.home main .our-events .imgs .img1 .left > div:nth-child(2) img {
+.home .our-events .imgs .img1 .left > div:nth-child(2) img {
   width: 100%;
   height: 300px;
 }
-.home main .our-events .imgs .img1 .right {
+.home .our-events .imgs .img1 .right {
   width: 30%;
 }
-.home main .our-events .imgs .img1 .right div:nth-child(1) {
+.home .our-events .imgs .img1 .right div:nth-child(1) {
   margin-bottom: 20px;
 }
-.home main .our-events .imgs .img1 .right div:nth-child(1) img {
+.home .our-events .imgs .img1 .right div:nth-child(1) img {
   width: 100%;
   height: 300px;
 }
-.home main .our-events .imgs .img1 .right div:nth-child(2) img {
+.home .our-events .imgs .img1 .right div:nth-child(2) img {
   width: 100%;
   height: 400px;
 }
-.home main .our-events .imgs .img2 {
+.home .our-events .imgs .img2 {
   margin-top: 20px;
 }
-.home main .our-events .imgs .img2 .left {
+.home .our-events .imgs .img2 .left {
   width: 30%;
   margin-right: 20px;
 }
-.home main .our-events .imgs .img2 .left img {
+.home .our-events .imgs .img2 .left img {
   width: 100%;
   height: 340px;
 }
-.home main .our-events .imgs .img2 .right {
+.home .our-events .imgs .img2 .right {
   width: 70%;
 }
-.home main .our-events .imgs .img2 .right img {
+.home .our-events .imgs .img2 .right img {
   width: 100%;
   height: 340px;
 }
-.home main .our-partners {
+.home .our-partners {
   background-color: #121212;
   padding: 50px;
   text-align: center;
 }
-.home main .our-partners h2 {
+.home .our-partners h2 {
   color: #970404;
   font-size: 48px;
   margin-bottom: 100px;
 }
-.home main .our-partners .item {
+.home .our-partners .item {
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
 }
-.home main .our-partners .item .img img {
+.home .our-partners .item .img img {
   width: 270px;
   height: 220px;
 }
-.home main .our-partners .item h3 {
+.home .our-partners .item h3 {
   color: white;
   margin: 20px 0;
   font-size: 30px;
 }
-.home main .join-us {
+.home .join-us {
   background-image: url(../img/hand-of-referee-holding-puck-over-ice-rink-and-two-42RJUAZ.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 100px 0;
   position: relative;
 }
-.home main .join-us .inner {
+.home .join-us .inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -520,35 +538,35 @@ footer .info {
   background-color: black;
   opacity: 0.5;
 }
-.home main .join-us .container {
+.home .join-us .container {
   position: relative;
   z-index: 99;
 }
-.home main .join-us h2 {
+.home .join-us h2 {
   color: #970404;
   font-size: 48px;
   margin-bottom: 50px;
   text-align: center;
 }
-.home main .join-us h2 span {
+.home .join-us h2 span {
   color: white;
 }
-.home main .join-us .content .text {
+.home .join-us .content .text {
   flex-grow: 1;
 }
-.home main .join-us .content .text p {
+.home .join-us .content .text p {
   font-size: 20px;
   line-height: 1.8;
   color: white;
   margin: auto;
 }
-.home main .join-us .content .btn {
+.home .join-us .content .btn {
   text-align: right;
   margin: auto;
   transition: 0.3s ease-in-out;
   background-image: linear-gradient(to right, #CC0913, #F07A34);
 }
-.home main .join-us .content .btn a {
+.home .join-us .content .btn a {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
@@ -556,180 +574,183 @@ footer .info {
   text-align: center;
   color: white;
 }
+.home .join-us .content .btn:hover {
+  opacity: 0.8;
+}
 
 @media screen and (max-width: 720px) {
-  .home main .slogn {
+  .home .slogn {
     margin-top: 0;
   }
-  .home main .our-mission .item > div p {
+  .home .our-mission .item > div p {
     text-align: center;
     font-size: 24px;
   }
-  .home main .our-programs {
+  .home .our-programs {
     padding: 50px 10px;
   }
-  .home main .our-programs .flex-between-center {
+  .home .our-programs .flex-between-center {
     display: block;
   }
-  .home main .our-programs .title {
+  .home .our-programs .title {
     margin-bottom: 30px;
   }
-  .home main .our-programs .list .item:nth-last-child(1) {
+  .home .our-programs .list .item:nth-last-child(1) {
     border: none;
   }
-  .home main .our-programs .list .item .right {
+  .home .our-programs .list .item .right {
     margin-top: 20px;
   }
-  .home main .our-events {
+  .home .our-events {
     padding: 50px 0 0;
   }
-  .home main .our-events .flex-between {
+  .home .our-events .flex-between {
     display: block;
   }
-  .home main .our-events div {
+  .home .our-events div {
     width: 100% !important;
     margin-bottom: 0 !important;
     margin-top: 0 !important;
   }
-  .home main .our-events img {
+  .home .our-events img {
     margin-bottom: 20px;
   }
-  .home main .our-events .imgs .img2 .right img {
+  .home .our-events .imgs .img2 .right img {
     margin-bottom: 0;
   }
-  .home main .our-partners {
+  .home .our-partners {
     text-align: center;
     padding: 50px 10px;
   }
-  .home main .our-partners .flex-between {
+  .home .our-partners .flex-between {
     display: block;
   }
-  .home main .our-partners .title h2 {
+  .home .our-partners .title h2 {
     margin-bottom: 30px;
   }
-  .home main .our-partners .content .item {
+  .home .our-partners .content .item {
     margin-bottom: 50px;
   }
-  .home main .join-us {
+  .home .join-us {
     display: none;
   }
 }
-.about main .slogn {
+.about .slogn {
   margin-top: 10px;
   font-size: 0;
 }
-.about main .slogn video {
+.about .slogn video {
   width: 100%;
 }
-.about main .our-story {
+.about .our-story {
   background-color: #202020;
   padding: 100px 0;
 }
-.about main .our-story .title {
+.about .our-story .title {
   margin-bottom: 50px;
 }
-.about main .our-story .title h2 {
+.about .our-story .title h2 {
   color: #970404;
   font-size: 48px;
   text-align: center;
 }
-.about main .our-story .content .item {
+.about .our-story .content .item {
   width: 49%;
 }
-.about main .our-story .content .item p {
+.about .our-story .content .item p {
   color: #ddd;
   margin-bottom: 20px;
   line-height: 2;
   font-size: 17px;
 }
-.about main .our-commitment {
+.about .our-commitment {
   background-color: #121212;
   padding: 50px;
 }
-.about main .our-commitment h2 {
+.about .our-commitment h2 {
   color: #970404;
   font-size: 48px;
   margin-bottom: 50px;
 }
-.about main .our-commitment .content h3 {
+.about .our-commitment .content h3 {
   color: white;
   font-size: 30px;
   margin-bottom: 15px;
 }
-.about main .our-commitment .content p {
+.about .our-commitment .content p {
   font-size: 18px;
   line-height: 1.8;
   color: #ddd;
   margin: auto;
 }
-.about main .our-commitment .content .top {
+.about .our-commitment .content .top {
   display: flex;
   justify-content: space-between;
   height: 240px;
   margin-bottom: 2%;
 }
-.about main .our-commitment .content .top div {
+.about .our-commitment .content .top div {
   background-color: #CB2025;
 }
-.about main .our-commitment .content .top .left {
+.about .our-commitment .content .top .left {
   width: 68%;
   padding: 20px;
 }
-.about main .our-commitment .content .top .right {
+.about .our-commitment .content .top .right {
   width: 30%;
   padding: 20px;
 }
-.about main .our-commitment .content .bottom {
+.about .our-commitment .content .bottom {
   display: flex;
   justify-content: space-between;
 }
-.about main .our-commitment .content .bottom .left {
+.about .our-commitment .content .bottom .left {
   width: 68%;
 }
-.about main .our-commitment .content .bottom .left .lt {
+.about .our-commitment .content .bottom .left .lt {
   margin-bottom: 2%;
   height: 240px;
 }
-.about main .our-commitment .content .bottom .left .lt .lt-l {
+.about .our-commitment .content .bottom .left .lt .lt-l {
   background-color: #3D3D3D;
   width: 49%;
   padding: 20px;
 }
-.about main .our-commitment .content .bottom .left .lt .lt-r {
+.about .our-commitment .content .bottom .left .lt .lt-r {
   background-color: #CB2025;
   width: 49%;
   padding: 20px;
 }
-.about main .our-commitment .content .bottom .left .lb {
+.about .our-commitment .content .bottom .left .lb {
   background-color: #CB2025;
   height: 240px;
   padding: 20px;
 }
-.about main .our-commitment .content .bottom .right {
+.about .our-commitment .content .bottom .right {
   width: 30%;
   background-color: #3D3D3D;
   height: 496px;
   padding: 20px;
 }
-.about main .our-services {
+.about .our-services {
   background-color: #212121;
   padding: 50px;
 }
-.about main .our-services .title {
+.about .our-services .title {
   margin-bottom: 50px;
 }
-.about main .our-services .title h2 {
+.about .our-services .title h2 {
   color: #970404;
   font-size: 48px;
 }
-.about main .our-services .content {
+.about .our-services .content {
   text-align: center;
   align-items: center;
 }
-.about main .our-services .content .item {
+.about .our-services .content .item {
   width: 320px;
 }
-.about main .our-services .content .services {
+.about .our-services .content .services {
   background-color: #CB2026;
   text-align: center;
   padding-top: 10px;
@@ -737,30 +758,30 @@ footer .info {
   margin-left: 25px;
   margin-right: 25px;
 }
-.about main .our-services .content h3 {
+.about .our-services .content h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-style: italic;
   font-weight: 700;
   color: white;
 }
-.about main .our-services .content p {
+.about .our-services .content p {
   color: #ddd;
   margin-bottom: 20px;
 }
-.about main .our-services .content .img img {
+.about .our-services .content .img img {
   width: 320px;
   height: 240px;
 }
-.about main .our-services .btn {
+.about .our-services .btn {
   text-align: center;
   margin-top: 50px;
 }
-.about main .our-services .btn .link1 {
+.about .our-services .btn .link1 {
   color: #970404;
   font-size: 30px;
 }
-.about main .our-services .btn .link2 {
+.about .our-services .btn .link2 {
   display: none;
   text-decoration: none;
   font-size: 18px;
@@ -769,94 +790,99 @@ footer .info {
   color: white;
   background-image: linear-gradient(to right, #CC0913, #F07A34);
 }
-.about main .our-services .btn:hover {
-  background-image: linear-gradient(to right, #F07A34, #CC0913);
+.about .our-services .btn:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 720px) {
-  .about main .slogn {
+  .about .slogn {
     margin-top: 0;
   }
-  .about main .our-story {
+  .about .our-story {
     padding: 50px 20px;
   }
-  .about main .our-story .content {
+  .about .our-story .content {
     display: block;
   }
-  .about main .our-story .content .item {
+  .about .our-story .content .item {
     width: 100%;
   }
-  .about main .our-commitment {
+  .about .our-commitment {
     padding: 50px 0 0;
   }
-  .about main .our-commitment .flex-between {
+  .about .our-commitment .flex-between {
     display: block;
   }
-  .about main .our-commitment .title {
+  .about .our-commitment .title {
     text-align: center;
   }
-  .about main .our-commitment .content .top {
+  .about .our-commitment .content .top {
     display: block;
     height: auto;
   }
-  .about main .our-commitment .content .top .left {
+  .about .our-commitment .content .top .left {
     width: 100%;
     margin-bottom: 20px;
   }
-  .about main .our-commitment .content .top .right {
+  .about .our-commitment .content .top .right {
     width: 100%;
     margin-bottom: 20px;
     background-color: #3D3D3D;
   }
-  .about main .our-commitment .content .bottom {
+  .about .our-commitment .content .bottom {
     display: block;
   }
-  .about main .our-commitment .content .bottom .left {
+  .about .our-commitment .content .bottom .left {
     width: 100%;
   }
-  .about main .our-commitment .content .bottom .left .lt {
+  .about .our-commitment .content .bottom .left .lt {
     height: auto;
   }
-  .about main .our-commitment .content .bottom .left .lt .lt-l {
+  .about .our-commitment .content .bottom .left .lt .lt-l {
     width: 100%;
     margin-bottom: 20px;
     background-color: #CB2025;
   }
-  .about main .our-commitment .content .bottom .left .lt .lt-r {
+  .about .our-commitment .content .bottom .left .lt .lt-r {
     width: 100%;
     margin-bottom: 20px;
     background-color: #3D3D3D;
   }
-  .about main .our-commitment .content .bottom .left .lb {
+  .about .our-commitment .content .bottom .left .lb {
     height: auto;
     margin-bottom: 20px;
   }
-  .about main .our-commitment .content .bottom .right {
+  .about .our-commitment .content .bottom .right {
     width: 100%;
     height: auto;
   }
-  .about main .our-services {
+  .about .our-services {
     padding: 50px 10px;
     text-align: center;
   }
-  .about main .our-services .content {
+  .about .our-services .content {
     display: block;
   }
-  .about main .our-services .content .item {
+  .about .our-services .content .item {
     width: 100%;
     margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .about main .our-services .btn .link1 {
+  .about .our-services .btn .link1 {
     display: none;
   }
-  .about main .our-services .btn .link2 {
+  .about .our-services .btn .link2 {
     display: inline-block;
   }
+  .about .our-services .btn:hover {
+    opacity: 0.8;
+  }
 }
-.contact main {
+.contact {
   background-color: #000000;
 }
-.contact main .lets-chat {
+.contact .lets-chat {
   background-image: url(../img/hand-of-referee-holding-puck-over-ice-rink-and-two-42RJUAZ.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -864,7 +890,7 @@ footer .info {
   margin-top: 10px;
   position: relative;
 }
-.contact main .lets-chat .inner {
+.contact .lets-chat .inner {
   position: absolute;
   top: 0;
   left: 0;
@@ -873,88 +899,88 @@ footer .info {
   background-color: black;
   opacity: 0.5;
 }
-.contact main .lets-chat .container {
+.contact .lets-chat .container {
   position: relative;
   z-index: 99;
 }
-.contact main .lets-chat .left {
+.contact .lets-chat .left {
   display: flex;
   justify-content: center;
 }
-.contact main .lets-chat .left .text h3 {
+.contact .lets-chat .left .text h3 {
   color: #970404;
   font-size: 30px;
 }
-.contact main .lets-chat .left .text p {
+.contact .lets-chat .left .text p {
   color: white;
   font-size: 18px;
 }
-.contact main .lets-chat .imgs {
+.contact .lets-chat .imgs {
   justify-content: center;
   margin-top: 20px;
 }
-.contact main .lets-chat .imgs .img {
+.contact .lets-chat .imgs .img {
   width: 40px;
   height: 40px;
   border-radius: 40px;
   background-color: white;
   margin-right: 16px;
 }
-.contact main .lets-chat .imgs .img a {
+.contact .lets-chat .imgs .img a {
   font-size: 0;
 }
-.contact main .lets-chat .imgs .img img {
+.contact .lets-chat .imgs .img img {
   width: 24px;
 }
-.contact main .contact-form {
+.contact .contact-form {
   margin-top: 100px;
 }
-.contact main .contact-form .container {
+.contact .contact-form .container {
   width: 800px;
   margin: auto;
 }
-.contact main .contact-form .title h2 {
+.contact .contact-form .title h2 {
   font-size: 48px;
   color: #970404;
   margin-bottom: 20px;
 }
-.contact main .contact-form .title p {
+.contact .contact-form .title p {
   line-height: 1.8;
   color: #ddd;
   margin-bottom: 50px;
 }
-.contact main .contact-form .item {
+.contact .contact-form .item {
   margin: 20px 0;
 }
-.contact main .contact-form .item:nth-child(1) div {
+.contact .contact-form .item:nth-child(1) div {
   width: 100%;
 }
-.contact main .contact-form .item:nth-child(1) div input {
+.contact .contact-form .item:nth-child(1) div input {
   width: 98%;
 }
-.contact main .contact-form .item input,
-.contact main .contact-form .item textarea,
-.contact main .contact-form .item select {
+.contact .contact-form .item input,
+.contact .contact-form .item textarea,
+.contact .contact-form .item select {
   width: 100%;
   border-color: white;
   padding: 3px 20px;
   color: black;
   font-size: 20px;
 }
-.contact main .contact-form .item p {
+.contact .contact-form .item p {
   color: gray;
   margin-bottom: 3px;
   font-size: 18px;
 }
-.contact main .contact-form .item p span {
+.contact .contact-form .item p span {
   color: #FF0000;
   font-size: 13px;
 }
-.contact main .contact-form .btn {
+.contact .contact-form .btn {
   padding: 30px 0 60px;
   text-align: right;
 }
-.contact main .contact-form .btn input {
+.contact .contact-form .btn input {
   display: inline-block;
   font-size: 18px;
   padding: 10px 60px;
@@ -966,33 +992,39 @@ footer .info {
   background-color: transparent;
   font-size: 20PX;
 }
+.contact .contact-form .btn:hover {
+  opacity: 0.8;
+}
 
 @media screen and (max-width: 720px) {
-  .contact main .lets-chat {
+  .contact .lets-chat {
     display: none;
   }
-  .contact main .contact-form {
+  .contact .contact-form {
     padding: 0 10px;
     padding-top: 20px;
     margin: 0;
   }
-  .contact main .contact-form .container {
+  .contact .contact-form .container {
     width: 100%;
   }
-  .contact main .contact-form .title {
+  .contact .contact-form .title {
     text-align: center;
   }
-  .contact main .contact-form form .item:nth-child(1) {
+  .contact .contact-form form .item:nth-child(1) {
     display: block;
   }
-  .contact main .contact-form form .item:nth-child(1) > div:nth-child(1) {
+  .contact .contact-form form .item:nth-child(1) > div:nth-child(1) {
     margin-bottom: 20px;
   }
-  .contact main .contact-form form .btn {
+  .contact .contact-form form .btn {
     text-align: center;
   }
-  .contact main .contact-form form .btn input {
+  .contact .contact-form form .btn input {
     width: 100%;
+  }
+  .contact .contact-form form .btn:hover {
+    opacity: 0.8;
   }
 }
 .program main {
@@ -1067,6 +1099,9 @@ footer .info {
   background-color: transparent;
   font-size: 20PX;
 }
+.program main .partner-education form .btn:hover {
+  opacity: 0.8;
+}
 
 @media screen and (max-width: 720px) {
   .program main {
@@ -1087,6 +1122,9 @@ footer .info {
   }
   .program main .partner-education form .btn {
     text-align: center;
+  }
+  .program main .partner-education form .btn:hover {
+    opacity: 0.8;
   }
 }
 .login {
@@ -1171,6 +1209,9 @@ footer .info {
   background-color: transparent;
   font-size: 24PX;
 }
+.login .login-box form .btn:hover {
+  opacity: 0.8;
+}
 .login footer {
   display: none;
 }
@@ -1197,48 +1238,48 @@ footer .info {
     display: block;
   }
 }
-.profile main {
+.profile {
   margin-top: 10px;
   background-color: #202020;
   padding: 100px 0;
 }
-.profile main .container {
+.profile .container {
   justify-content: center;
 }
-.profile main .title {
+.profile .title {
   display: none;
 }
-.profile main .left {
+.profile .left {
   margin-right: 60px;
 }
-.profile main .right {
+.profile .right {
   color: white;
   font-size: 24px;
 }
-.profile main .right h2 {
+.profile .right h2 {
   font-size: 50px;
   margin-bottom: 30px;
 }
-.profile main .right div form p {
+.profile .right div form p {
   margin: 20px 0;
 }
-.profile main .right div form p span:nth-child(1) {
+.profile .right div form p span:nth-child(1) {
   display: inline-block;
   width: 150px;
 }
-.profile main .right div form p span:nth-child(2) {
+.profile .right div form p span:nth-child(2) {
   color: gray;
 }
-.profile main .right div form p span:nth-child(2) input,
-.profile main .right div form p span:nth-child(2) select {
+.profile .right div form p span:nth-child(2) input,
+.profile .right div form p span:nth-child(2) select {
   padding: 5px;
   width: 200px;
 }
-.profile main .right div form .btn {
+.profile .right div form .btn {
   text-align: right;
   margin-top: 30px;
 }
-.profile main .right div form .btn input {
+.profile .right div form .btn input {
   display: inline-block;
   font-size: 17px;
   padding: 5px 30px;
@@ -1250,247 +1291,246 @@ footer .info {
   background-color: transparent;
   font-size: 24PX;
 }
+.profile .right div form .btn:hover {
+  opacity: 0.8;
+}
 .profile footer .map {
   display: none;
 }
 
 @media screen and (max-width: 720px) {
-  .profile .main-header.log-in {
-    background-color: #BE0711;
-  }
-  .profile main {
+  .profile {
     margin-top: 0;
     padding: 10px;
   }
-  .profile main .flex {
+  .profile .main-header.log-in {
+    background-color: #BE0711;
+  }
+  .profile .flex {
     display: block;
   }
-  .profile main .title {
+  .profile .title {
     display: block;
     color: white;
     text-align: center;
     font-size: 30px;
     margin: 30px 0 20px;
   }
-  .profile main .left {
+  .profile .left {
     text-align: center;
     margin-right: 0;
   }
-  .profile main .left img {
+  .profile .left img {
     width: 160px;
   }
-  .profile main .right {
+  .profile .right {
     font-size: 18px;
   }
-  .profile main .right h2 {
+  .profile .right h2 {
     display: none;
   }
-  .profile main .right div form p span:nth-child(1) {
+  .profile .right div form p span:nth-child(1) {
     width: 120px;
   }
-  .profile main .right div form .btn input {
+  .profile .right div form .btn input {
     width: 100%;
+  }
+  .profile .right div form .btn:hover {
+    opacity: 0.8;
   }
   .profile footer .map {
     display: block;
   }
 }
-.virtual main {
+.classes {
+  height: 80vh;
   margin-top: 10px;
   background-color: #202020;
   padding-top: 50px;
 }
-.virtual main .title h2 {
+.classes .title h2 {
   color: white;
   font-size: 30px;
 }
-.virtual main .content .row1 {
-  margin-bottom: 80px;
+.classes .content .row1 {
+  padding-bottom: 80px;
 }
-.virtual main .content .row1 .item {
+.classes .content .row1 .item {
   width: 360px;
 }
-.virtual main .content .row1 .item .video video {
+.classes .content .row1 .item .video video {
   width: 100%;
 }
-.virtual main .content .row1 .item .title {
+.classes .content .row1 .item .title {
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.virtual main .content .row1 .item .title h3 {
+.classes .content .row1 .item .title h3 {
   color: #ED0000;
 }
-.virtual main .content .row1 .item p {
+.classes .content .row1 .item p {
   color: white;
   line-height: 1.8;
 }
-.virtual main .content .row2 .item {
-  width: 360px;
-}
-.virtual main .content .row2 .item .video video {
-  width: 100%;
-}
-.virtual footer .map {
+.classes footer .map {
   display: none;
 }
 
 @media screen and (max-width: 720px) {
-  .virtual .main-header.log-in {
-    background-color: #BE0711;
-  }
-  .virtual main {
+  .classes {
+    height: 170vh;
     margin-top: 0;
   }
-  .virtual main .flex-between {
+  .classes .main-header.log-in {
+    background-color: #BE0711;
+  }
+  .classes .flex-between {
     display: block;
   }
-  .virtual main .title {
+  .classes .title {
     text-align: center;
     margin-bottom: 20px;
   }
-  .virtual main .content .row1 {
+  .classes .content .row1 {
     margin-bottom: 0;
   }
-  .virtual main .content .row1 .item {
+  .classes .content .row1 .item {
     width: 100%;
     margin-bottom: 20px;
   }
-  .virtual main .content .row1 .item:nth-last-child(1) {
+  .classes .content .row1 .item:nth-last-child(1) {
     margin-bottom: 0;
     padding-bottom: 20px;
   }
-  .virtual main .content .row1 .item .title {
+  .classes .content .row1 .item .title {
     margin: 5px 10px;
     font-size: 18px;
   }
-  .virtual main .content .row1 .item .title.flex-between {
+  .classes .content .row1 .item .title.flex-between {
     display: flex;
     align-items: center;
   }
-  .virtual main .content .row1 .item p {
+  .classes .content .row1 .item p {
     margin: 5px 10px;
     font-size: 16px;
   }
-  .virtual main .content .row2 {
-    display: none;
-  }
-  .virtual footer .map {
+  .classes footer .map {
     display: block;
   }
 }
-.task main {
+.task {
   margin-top: 10px;
   background-color: #202020;
   padding: 50px 0 100px;
 }
-.task main .title {
+.task .title {
   font-size: 30px;
   color: white;
   margin-bottom: 30px;
 }
-.task main .calendar table {
+.task .calendar table {
   width: 100%;
   text-align: center;
 }
-.task main .calendar table thead tr th {
+.task .calendar table thead tr th {
   background-color: #CB2025;
   padding: 20px 10px;
   color: white;
   font-size: 20px;
 }
-.task main .calendar table tbody tr td {
+.task .calendar table tbody tr td {
   background-color: white;
   padding: 10px;
 }
-.task main .calendar table tbody tr td img {
+.task .calendar table tbody tr td img {
   height: 20px;
   margin-right: 5px;
 }
-.task main .c2 {
+.task .c2 {
   display: none;
 }
 
 @media screen and (max-width: 720px) {
-  .task .main-header.log-in {
-    background-color: #BE0711;
-  }
-  .task main {
+  .task {
     margin-top: 0;
     padding: 50px 0 0;
   }
-  .task main .title h2 {
+  .task .main-header.log-in {
+    background-color: #BE0711;
+  }
+  .task .title h2 {
     text-align: center;
   }
-  .task main .c1 {
+  .task .c1 {
     display: none;
   }
-  .task main .c2 {
+  .task .c2 {
     display: block;
   }
-  .task main .c2 .item {
+  .task .c2 .item {
     border-bottom: 5px solid white;
   }
-  .task main .c2 .item:nth-last-child(1) {
+  .task .c2 .item:nth-last-child(1) {
     border-bottom: none;
   }
-  .task main .c2 .item p {
+  .task .c2 .item p {
     display: flex;
     align-items: center;
   }
-  .task main .c2 .item p:nth-child(even) span:nth-child(1) {
+  .task .c2 .item p:nth-child(even) span:nth-child(1) {
     background-color: #CB2025;
   }
-  .task main .c2 .item p:nth-child(odd) span:nth-child(1) {
+  .task .c2 .item p:nth-child(odd) span:nth-child(1) {
     background-color: #3D3D3D;
   }
-  .task main .c2 .item p span {
+  .task .c2 .item p span {
     display: inline-block;
     width: 100px;
     line-height: 30px;
     margin-bottom: 10px;
   }
-  .task main .c2 .item p span:nth-child(1) {
+  .task .c2 .item p span:nth-child(1) {
     color: white;
     text-align: center;
     margin-right: 20px;
   }
-  .task main .c2 .item p span:nth-child(2) {
+  .task .c2 .item p span:nth-child(2) {
     color: gray;
     flex-grow: 1;
   }
-  .task main .c2 .item p span:nth-child(2) img {
+  .task .c2 .item p span:nth-child(2) img {
     height: 24px;
   }
 }
-.reminder main {
+.reminder {
   margin-top: 10px;
   background-color: #202020;
   color: white;
   padding: 50px;
 }
-.reminder main h2 {
+.reminder h2 {
   font-size: 40px;
   margin-bottom: 20px;
 }
-.reminder main .item .title {
+.reminder .item .title {
   background-color: #CB2025;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 24px;
 }
-.reminder main .item .todos {
+.reminder .item .todos {
   margin-bottom: 50px;
 }
-.reminder main .item .todos p {
+.reminder .item .todos p {
   line-height: 1.8;
   font-size: 18px;
   display: flex;
 }
-.reminder main .item .todos p.done {
+.reminder .item .todos p.done {
   background-color: #1BBC48;
 }
-.reminder main .item .todos p::before {
+.reminder .item .todos p::before {
   content: "";
   display: inline-block;
   width: 3px;
@@ -1506,20 +1546,20 @@ footer .info {
 }
 
 @media screen and (max-width: 720px) {
-  .reminder .main-header.log-in {
-    background-color: #BE0711;
-  }
-  .reminder main {
+  .reminder {
     margin-top: 0;
     padding: 50px 0;
   }
-  .reminder main h2 {
+  .reminder .main-header.log-in {
+    background-color: #BE0711;
+  }
+  .reminder h2 {
     text-align: center;
   }
-  .reminder main .item .todos {
+  .reminder .item .todos {
     padding: 0 10px;
   }
-  .reminder main .item .todos p.done {
+  .reminder .item .todos p.done {
     background-color: transparent;
     color: #1BBC48;
   }

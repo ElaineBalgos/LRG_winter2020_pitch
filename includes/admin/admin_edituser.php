@@ -27,6 +27,6 @@ if(isset($_POST["user_id"]) && isset($_POST["user_name"]) &&
     echo json_encode($message);
 
 } else {
-    echo "Sth wrong when posting data.";
+    echo json_encode("Sth wrong when posting data.");
 }
 

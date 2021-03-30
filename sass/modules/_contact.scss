@@ -1,156 +1,155 @@
 .contact {
-    main {
-        background-color: #000000;
 
-        .lets-chat {
-            background-image : url(../img/hand-of-referee-holding-puck-over-ice-rink-and-two-42RJUAZ.jpg);
-            background-repeat: no-repeat;
-            background-size  : 100% 100%;
-            padding          : 150px 0;
-            margin-top       : 10px;
-            position         : relative;
+    background-color: #000000;
 
-            .inner {
-                position        : absolute;
-                top             : 0;
-                left            : 0;
-                bottom          : 0;
-                right           : 0;
-                background-color: black;
-                opacity         : 0.5;
-            }
+    .lets-chat {
+        background-image : url(../img/hand-of-referee-holding-puck-over-ice-rink-and-two-42RJUAZ.jpg);
+        background-repeat: no-repeat;
+        background-size  : 100% 100%;
+        padding          : 150px 0;
+        margin-top       : 10px;
+        position         : relative;
 
-            .container {
-                position: relative;
-                z-index : 99;
-            }
-
-            .left {
-                display        : flex;
-                justify-content: center;
-
-                .text {
-                    h3 {
-                        color    : #970404;
-                        font-size: 30px;
-                    }
-
-                    p {
-                        color    : white;
-                        font-size: 18px;
-                    }
-                }
-
-            }
-
-            .imgs {
-                justify-content: center;
-                margin-top     : 20px;
-
-                .img {
-                    width           : 40px;
-                    height          : 40px;
-                    border-radius   : 40px;
-                    background-color: white;
-                    margin-right    : 16px;
-
-                    a{
-                        font-size: 0;
-                    }
-
-                    img {
-                        width: 24px;
-                    }
-                }
-            }
+        .inner {
+            position        : absolute;
+            top             : 0;
+            left            : 0;
+            bottom          : 0;
+            right           : 0;
+            background-color: black;
+            opacity         : 0.5;
         }
 
-        .contact-form {
-            margin-top: 100px;
+        .container {
+            position: relative;
+            z-index : 99;
+        }
 
-            .container {
-                width : 800px;
-                margin: auto;
-            }
+        .left {
+            display        : flex;
+            justify-content: center;
 
-            .title {
-                h2 {
-                    font-size    : 48px;
-                    color        : #970404;
-                    margin-bottom: 20px;
+            .text {
+                h3 {
+                    color    : #970404;
+                    font-size: 30px;
                 }
 
                 p {
-                    line-height  : 1.8;
-                    color        : #ddd;
-                    margin-bottom: 50px;
+                    color    : white;
+                    font-size: 18px;
                 }
             }
 
-            .item {
-                margin: 20px 0;
+        }
 
-                &:nth-child(1) {
-                    div {
-                        width: 100%;
+        .imgs {
+            justify-content: center;
+            margin-top     : 20px;
 
-                        input {
-                            width: 98%;
-                        }
-                    }
+            .img {
+                width           : 40px;
+                height          : 40px;
+                border-radius   : 40px;
+                background-color: white;
+                margin-right    : 16px;
+
+                a{
+                    font-size: 0;
                 }
 
-                input,
-                textarea,
-                select {
-                    width       : 100%;
-                    border-color: white;
-                    padding     : 3px 20px;
-                    color       : black;
-                    font-size   : 20px;
+                img {
+                    width: 24px;
                 }
-
-                p {
-                    color        : gray;
-                    margin-bottom: 3px;
-                    font-size    : 18px;
-
-                    span {
-                        color    : #FF0000;
-                        font-size: 13px;
-                    }
-                }
-            }
-
-            .btn {
-                padding   : 30px 0 60px;
-                text-align: right;
-
-                input {
-                    display         : inline-block;
-                    font-size       : 18px;
-                    padding         : 10px 60px;
-                    border          : none;
-                    text-align      : center;
-                    color           : white;
-                    background-image: linear-gradient(to right, #CC0913, #F07A34);
-                    cursor          : pointer;
-                    background-color: transparent;
-                    font-size       : 20PX;
-                }
-            }
-
-            .btn:hover {
-                opacity: 0.8;
             }
         }
     }
+
+    .contact-form {
+        margin-top: 100px;
+
+        .container {
+            width : 800px;
+            margin: auto;
+        }
+
+        .title {
+            h2 {
+                font-size    : 48px;
+                color        : #970404;
+                margin-bottom: 20px;
+            }
+
+            p {
+                line-height  : 1.8;
+                color        : #ddd;
+                margin-bottom: 50px;
+            }
+        }
+
+        .item {
+            margin: 20px 0;
+
+            &:nth-child(1) {
+                div {
+                    width: 100%;
+
+                    input {
+                        width: 98%;
+                    }
+                }
+            }
+
+            input,
+            textarea,
+            select {
+                width       : 100%;
+                border-color: white;
+                padding     : 3px 20px;
+                color       : black;
+                font-size   : 20px;
+            }
+
+            p {
+                color        : gray;
+                margin-bottom: 3px;
+                font-size    : 18px;
+
+                span {
+                    color    : #FF0000;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .btn {
+            padding   : 30px 0 60px;
+            text-align: right;
+
+            input {
+                display         : inline-block;
+                font-size       : 18px;
+                padding         : 10px 60px;
+                border          : none;
+                text-align      : center;
+                color           : white;
+                background-image: linear-gradient(to right, #CC0913, #F07A34);
+                cursor          : pointer;
+                background-color: transparent;
+                font-size       : 20PX;
+            }
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+    }
+
 }
 
 @media screen and (max-width: 720px) {
 
     .contact {
-        main {
             .lets-chat {
                 display: none;
             }
@@ -188,5 +187,4 @@
                 }
             }
         }
-    }
 }

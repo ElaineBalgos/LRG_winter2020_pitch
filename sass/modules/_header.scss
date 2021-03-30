@@ -49,8 +49,13 @@
                     font-weight    : bold;
                     padding        : 12px 20px;
 
-                    &.active {
+                    // &.active {
+                    //     background-color: white;
+                    // }
+
+                    &.router-link-exact-active { /////////////////////
                         background-color: white;
+                        color          : #BE0500;
                     }
                 }
             }
