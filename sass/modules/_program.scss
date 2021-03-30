@@ -1,51 +1,64 @@
 
 .program {
 
-    .main-header{
-        background-color: #020303;
-    }
-
     main {
         background-color: #020303;
-        padding-top: 60px;
+        padding-top     : 60px;
+        margin-top: 10px;
+
         .nav {
             margin-bottom: 60px;
-            a{
-                color: white;
-                font-size: 18px;
-                display: inline-block;
+
+            a {
+                color          : #970404 ;
+                font-size      : 18px;
+                display        : inline-block;
                 text-decoration: none;
-                padding-bottom: 10px;
-                border-bottom: 2px solid red;
+                padding-bottom : 10px;
+                border-bottom  : 2px solid #970404 ;
             }
         }
 
         .partner-education {
-            .title {
+            padding-bottom: 80px;
 
-                h2 {
-                    color        : red;
-                    font-size    : 48px;
-                    margin-bottom: 20px;
-                }
+            h2 {
+                color        : #970404 ;
+                font-size    : 36px;
+                margin-bottom: 20px;
+            }
+
+            .title {
+                width: 40%;
 
                 p {
-                    color        : #ddd;
-                    margin-bottom: 80px;
+                    color      : #ddd;
+                    line-height: 3;
                 }
             }
 
             form {
+                flex-grow: 1;
+                margin-left: 80px;
                 .item {
                     margin: 20px 0;
 
+                    div{
+                        width: 100%;
+                    }
+
                     &:nth-child(1) {
                         input {
-                            width: 49%;
+                            width: 98%;
                         }
                     }
 
-                    input {
+                    p{
+                        color: #ddd;
+                        margin-bottom: 5px;
+                    }
+
+                    input, textarea {
                         width           : 100%;
                         background-color: #000;
                         border-color    : white;
@@ -60,11 +73,50 @@
                     text-align: right;
 
                     input {
-                        padding         : 12px 30px;
-                        background-image: linear-gradient(to bottom, #BA0101, #1A1010);
+                        display         : inline-block;
+                        font-size       : 18px;
+                        padding         : 10px 60px;
+                        text-align      : center;
                         color           : white;
-                        border-radius   : 20px;
-                        border          : none
+                        border          : none;
+                        background-image: linear-gradient(to right, #CC0913, #F07A34);
+                        cursor          : pointer;
+                        background-color: transparent;
+                        font-size       : 20PX;
+                    }
+                }
+
+                .btn:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .program{
+        main{
+            margin-top: 0;
+            padding:  50px 10px 0;
+            .flex-between{
+                display: block;
+            }
+            .partner-education{
+                h2{
+                    text-align: center;
+                }
+                .title{
+                    width: 100%;
+                }
+                form{
+                    margin-left: 0;
+                    .btn{
+                        text-align: center;
+                    }
+
+                    .btn:hover {
+                        opacity: 0.8;
                     }
                 }
             }

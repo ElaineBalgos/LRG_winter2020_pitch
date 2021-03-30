@@ -1,0 +1,153 @@
+
+.profile {
+    // main {
+        margin-top      : 10px;
+        background-color: #202020;
+        padding         : 100px 0;
+
+        .container {
+            justify-content: center;
+        }
+
+        .title {
+            display: none;
+        }
+
+        .left {
+            margin-right: 60px;
+        }
+
+        .right {
+            color    : white;
+            font-size: 24px;
+
+            h2 {
+                font-size    : 50px;
+                margin-bottom: 30px;
+            }
+
+            div {
+                form {
+                    p {
+                        margin: 20px 0;
+
+                        span {
+                            &:nth-child(1) {
+                                display: inline-block;
+                                width  : 150px;
+                            }
+
+                            &:nth-child(2) {
+                                color: gray;
+
+                                input,
+                                select {
+                                    padding: 5px;
+                                    width  : 200px;
+                                }
+                            }
+                        }
+                    }
+
+                    .btn {
+                        text-align: right;
+                        margin-top: 30px;
+
+                        input {
+                            display         : inline-block;
+                            font-size       : 17px;
+                            padding         : 5px 30px;
+                            text-align      : center;
+                            color           : white;
+                            border          : none;
+                            background-image: linear-gradient(to right, #CC0913, #F07A34);
+                            cursor          : pointer;
+                            background-color: transparent;
+                            font-size       : 24PX;
+                        }
+                    }
+
+                    .btn:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    // }
+
+    footer {
+        .map {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .profile {
+        .main-header {
+            &.log-in {
+                background-color: #BE0711;
+            }
+        }
+
+            margin-top: 0;
+            padding   : 10px;
+
+            .flex {
+                display: block;
+            }
+
+            .title {
+                display   : block;
+                color     : white;
+                text-align: center;
+                font-size : 30px;
+                margin    : 30px 0 20px;
+            }
+
+            .left {
+                text-align  : center;
+                margin-right: 0;
+
+                img {
+                    width: 160px;
+                }
+            }
+
+            .right {
+                font-size: 18px;
+
+                h2 {
+                    display: none;
+                }
+
+                div {
+                    form {
+                        p {
+                            span {
+                                &:nth-child(1) {
+                                    width: 120px;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            input {
+                                width: 100%;
+                            }
+                        }
+
+                        .btn:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+        footer {
+            .map {
+                display: block;
+            }
+        }
+    }
+}

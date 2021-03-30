@@ -1,56 +1,43 @@
-
 .about {
-    .main-header {
-        background-image : url(../img/3.jpg);
-        background-repeat: no-repeat;
-        background-size  : 100% 100%;
+
+    // main {
 
         .slogn {
-            margin    : 100px 0 140px;
-            text-align: center;
+            margin-top: 10px;
+            font-size : 0;
 
-            h2 {
-                color    : red;
-                font-size: 50px;
+            video {
+                width: 100%;
             }
         }
-    }
 
-    main {
-
-        .who-are-we {
-            background-color: #212121;
-            padding         : 50px;
+        .our-story {
+            background-color: #202020;
+            padding         : 100px 0;
 
             .title {
                 margin-bottom: 50px;
+
                 h2 {
-                    color        : red;
-                    font-size    : 48px;
+                    color     : #970404;
+                    font-size : 48px;
+                    text-align: center;
                 }
 
             }
 
             .content {
-                text-align: center;
 
-                .item{
-                    width: 240px;
-                }
+                .item {
+                    width: 49%;
 
-                p {
-                    color        : #ddd;
-                    margin-bottom: 20px;
-                }
-
-                .img {
-                    img {
-                        width        : 240px;
-                        height       : 280px;
+                    p {
+                        color        : #ddd;
+                        margin-bottom: 20px;
+                        line-height  : 2;
+                        font-size    : 17px;
                     }
                 }
-
-
             }
 
         }
@@ -61,18 +48,84 @@
             padding         : 50px;
 
             h2 {
-                color        : red;
+                color        : #970404;
                 font-size    : 48px;
                 margin-bottom: 50px;
             }
 
             .content {
+
+                h3 {
+                    color        : white;
+                    font-size    : 30px;
+                    margin-bottom: 15px;
+                }
+
                 p {
-                    width      : 1100px;
                     font-size  : 18px;
                     line-height: 1.8;
                     color      : #ddd;
                     margin     : auto;
+                }
+
+                .top {
+                    display        : flex;
+                    justify-content: space-between;
+                    height         : 240px;
+                    margin-bottom  : 2%;
+
+                    div {
+                        background-color: #CB2025;
+                    }
+
+                    .left {
+                        width  : 68%;
+                        padding: 20px;
+                    }
+
+                    .right {
+                        width  : 30%;
+                        padding: 20px;
+                    }
+                }
+
+                .bottom {
+                    display        : flex;
+                    justify-content: space-between;
+
+                    .left {
+                        width: 68%;
+
+                        .lt {
+                            margin-bottom: 2%;
+                            height       : 240px;
+
+                            .lt-l {
+                                background-color: #3D3D3D;
+                                width           : 49%;
+                                padding         : 20px;
+                            }
+
+                            .lt-r {
+                                background-color: #CB2025;
+                                width           : 49%;
+                                padding         : 20px;
+                            }
+                        }
+
+                        .lb {
+                            background-color: #CB2025;
+                            height          : 240px;
+                            padding         : 20px;
+                        }
+                    }
+
+                    .right {
+                        width           : 30%;
+                        background-color: #3D3D3D;
+                        height          : 496px;
+                        padding         : 20px;
+                    }
                 }
             }
         }
@@ -83,18 +136,38 @@
 
             .title {
                 margin-bottom: 50px;
+
                 h2 {
-                    color        : red;
-                    font-size    : 48px;
+                    color    : #970404;
+                    font-size: 48px;
                 }
 
             }
 
             .content {
                 text-align: center;
+                align-items: center;
 
-                .item{
-                    width: 240px;
+                .item {
+                    width: 320px;
+                }
+
+                .services {
+                    background-color: #CB2026;
+                    text-align: center;
+                    padding-top: 10px;
+                    display: inline-block;
+                    margin-left: 25px;
+                    margin-right: 25px;
+
+                }
+
+                h3 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 30px;
+                    font-style: italic;
+                    font-weight: 700;
+                    color    : white;
                 }
 
                 p {
@@ -103,22 +176,140 @@
                 }
 
                 .img {
+
                     img {
-                        width        : 240px;
-                        height       : 280px;
+                        width : 320px;
+                        height: 240px;
                     }
                 }
 
 
             }
-            .btn{
+
+            .btn {
                 text-align: center;
                 margin-top: 50px;
-                a{
-                    color: red;
-                    font-size: 18px;
+
+                .link1 {
+                    color    : #970404;
+                    font-size: 30px;
+                }
+
+                .link2 {
+                    display         : none;
+                    text-decoration : none;
+                    font-size       : 18px;
+                    padding         : 10px 50px;
+                    text-align      : center;
+                    color           : white;
+                    background-image: linear-gradient(to right, #CC0913, #F07A34);
+                }
+            }
+
+            .btn:hover {
+                opacity: 0.8;
+            }
+        }
+    // }
+}
+
+
+@media screen and (max-width: 720px) {
+    .about {
+            .slogn {
+                margin-top: 0;
+            }
+
+            .our-story {
+                padding: 50px 20px;
+
+                .content {
+                    display: block;
+
+                    .item {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .our-commitment {
+                padding: 50px 0 0;
+                .flex-between{
+                    display: block;
+                }
+                .title{
+                    text-align: center;
+                }
+                .content{
+                    .top{
+                        display: block;
+                        height: auto;
+                        .left{
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        .right{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            background-color: #3D3D3D;
+                        }
+                    }
+                    .bottom{
+                        display: block;
+                        .left{
+                            width: 100%;
+                            .lt{
+                                height: auto;
+                                .lt-l{
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                    background-color: #CB2025;
+                                }
+                                .lt-r{
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                    background-color: #3D3D3D;
+                                }
+                            }
+                            .lb{
+                                height: auto;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .right{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .our-services {
+                padding   : 50px 10px;
+                text-align: center;
+
+                .content {
+                    display: block;
+
+                    .item {
+                        width        : 100%;
+                        margin-bottom: 40px;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+                .btn{
+                    .link1{
+                        display: none;
+                    }
+                    .link2{
+                        display: inline-block;
+                    }
+                }
+
+                .btn:hover {
+                    opacity: 0.8;
                 }
             }
         }
-    }
 }

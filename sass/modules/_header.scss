@@ -1,45 +1,177 @@
 
-.main-header{
-    padding: 30px 0;
-    h2{
-        color: white;
-    }
-    nav{
-        ul{
-            margin-right: 200px;
-            list-style-type: none;
-            li{
-                margin: 0 20px;
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    color: #ddd;
-                    font-size: 18px;
-                    &.active{
+.main-header {
+    padding         : 30px 0 0;
+    background-color: #202020;
+    &.log-in{
+        background-color: black;
+        nav{
+            .menus{
+                li{
+                    a{
                         color: white;
-                        border-bottom: 2px solid #CC0000;
+                        &.active{
+                            color: #BE0500;
+                        }
+                    }
+                }
+            }
+            .imgs{
+                color: white;
+                align-items: center;
+                .img{
+                    img{
+                        width: 100%;
                     }
                 }
             }
         }
-        .btns{
-            a{
+    }
+
+    h2 {
+        color    : white;
+        font-size: 49px;
+        img{
+            height: 60px;
+        }
+    }
+
+    nav {
+        .menus {
+            margin-right   : 150px;
+            list-style-type: none;
+
+            li {
+                a {
+                    display        : inline-block;
+                    text-decoration: none;
+                    color          : #BE0500;
+                    font-size      : 32px;
+                    font-weight    : bold;
+                    padding        : 12px 20px;
+
+                    // &.active {
+                    //     background-color: white;
+                    // }
+
+                    &.router-link-exact-active { /////////////////////
+                        background-color: white;
+                        color          : #BE0500;
+                    }
+                }
+            }
+        }
+
+        .menus-mobile {
+            display: none;
+        }
+
+        .btns {
+            a {
                 text-decoration: none;
-                line-height: 50px;
-                display: inline-block;
-                width: 150px;
-                text-align: center;
-                border-radius: 50px;
-    
-                &:nth-child(1){
-                    background-color: white;
-                    color: black;
-                    margin-right: 20px;
+                line-height    : 40px;
+                display        : inline-block;
+                font-size      : 20px;
+                width          : 160px;
+                text-align     : center;
+                border-radius  : 10px;
+                color          : white;
+                border         : 3px solid #BE0500;
+                border-image   : linear-gradient(#CC0913, #F07A34) 20 20;
+            }
+        }
+
+        .btns:hover {
+            opacity: 0.8;
+        }
+
+        .imgs {
+            margin-left: 20px;
+
+            .img {
+                width           : 40px;
+                height          : 40px;
+                border-radius   : 40px;
+                background-color: white;
+                margin-right    : 16px;
+
+                a{
+                    font-size: 0;
                 }
-                &:nth-child(2){
-                    background-image: linear-gradient(to bottom, #BA0101, #1A1010);
-                    color: white;
+
+                img {
+                    width: 24px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main-header {
+        padding: 0;
+
+        .container {
+            padding: 0 10px;
+        }
+
+        h2 {
+            font-size: 32px;
+            img{
+                height: 26px;
+            }
+        }
+
+        nav {
+            margin-right: 0;
+
+            .menus {
+                display: none;
+            }
+
+            .menus-mobile {
+                display: block;
+
+                .menu-icon {
+                    img {
+                        width: 32px;
+                    }
+                }
+
+                .menus-list {
+                    display         : none;
+                    position        : absolute;
+                    top             : 49px;
+                    right           : 0;
+                    background-color: #ddd;
+                    z-index: 9999;
+                    list-style-type: none;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    li {
+                        a {
+                            color          : #444;
+                            font-size      : 13px;
+                            text-decoration: none;
+                            padding: 10px 30px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+
+            .btns {
+                display: none;
+            }
+
+            .btns:hover {
+                opacity: 0.8;
+            }
+
+            .imgs {
+                display: none;
             }
         }
     }
