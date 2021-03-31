@@ -15,6 +15,9 @@
 
         .left {
             margin-right: 60px;
+            img{
+                height: 400px;
+            }
         }
 
         .right {
@@ -32,9 +35,11 @@
                         margin: 20px 0;
 
                         span {
+                            font-family: 'Montserrat', sans-serif;
                             &:nth-child(1) {
                                 display: inline-block;
                                 width  : 150px;
+                                font-style: italic;
                             }
 
                             &:nth-child(2) {
@@ -44,6 +49,10 @@
                                 select {
                                     padding: 5px;
                                     width  : 200px;
+                                    font-family: 'Montserrat', sans-serif;
+                                }
+                                option{
+                                    font-family: 'Montserrat', sans-serif;
                                 }
                             }
                         }
@@ -111,6 +120,7 @@
 
                 img {
                     width: 160px;
+                    height: auto;
                 }
             }
 

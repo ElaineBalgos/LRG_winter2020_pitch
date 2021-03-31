@@ -6,7 +6,6 @@ export default {
     <div class="login">
         <div class="top"><router-link to="/"><img src="./img/logo.png" alt=""></router-link></div>
         <div class="login-box">
-            <h2>Sign In</h2>
             <div class="img"><img src="./img/users-solid.png" alt=""></div>
             <form action="" method="POST">
                 <p id="msg">{{ displayMsg }}</p>
@@ -17,7 +16,7 @@ export default {
                     <input v-model="input.password" name="password" id="password" type="password" placeholder="Password" required>
                 </div>
                 <div class="link">
-                    <router-link :to="{ name: 'Contact' }">Forgot your password?</router-link>
+                    <router-link :to="{ name: 'Contact' }" class="montserrat">Forgot your password?</router-link>
                 </div>
                 <div class="btn" @click.prevent="login">
                     <!-- <input type="text" value="SIGN IN" onclick="location.href='./index.html'"> -->

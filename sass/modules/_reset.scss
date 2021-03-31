@@ -1,12 +1,29 @@
 
 @font-face {
     font-family: anton;
-    src:url('../fonts/Anton-Regular.ttf'),  
+    src        : url('../fonts/Anton-Regular.ttf'),
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src        : url('../fonts/Montserrat-Medium.ttf');
+}
+
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    outline    : none;
+    font-family: anton;
+}
+
+input,
+textarea,
+select,
+option {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=submit], input[type=button]{
     font-family: anton;
 }

@@ -29,7 +29,7 @@ export default {
                     </a>
                 </div>
                 <div class="imgs flex">
-                    <div class="img flex-center-center"><router-link :to="{ name: 'UserProfile' }"><img src="./img/profile.png" alt=""></router-link></div>
+                    <div class="img flex-center-center avatar"><router-link :to="{ name: 'UserProfile' }"><img src="./img/profile.png" alt=""></router-link></div>
                     <p>{{ username }}</p>
                 </div>
             </nav>

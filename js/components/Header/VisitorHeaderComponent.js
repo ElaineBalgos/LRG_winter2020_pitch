@@ -27,9 +27,9 @@ export default {
                     </router-link>
                 </div>
                 <div class="imgs flex">
-                    <div class="img flex-center-center"><a href="#"><img src="./img/facebook.png" alt=""></a></div>
-                    <div class="img flex-center-center"><a href="#"><img src="./img/instagram.png" alt=""></a></div>
-                    <div class="img flex-center-center"><a href="#"><img src="./img/linkedin.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt=""></a></div>
                 </div>
             </nav>
         </div>

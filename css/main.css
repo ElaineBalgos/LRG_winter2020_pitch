@@ -2,6 +2,10 @@
   font-family: anton;
   src: url("../fonts/Anton-Regular.ttf");
 }
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +14,28 @@
   font-family: anton;
 }
 
+input,
+textarea,
+select,
+option {
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type=submit], input[type=button] {
+  font-family: anton;
+}
+
 .container {
   width: 1200px;
   margin: auto;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .flex {
@@ -146,11 +169,18 @@
   padding: 30px 0 0;
   background-color: #202020;
 }
+.main-header .container {
+  width: 96%;
+}
 .main-header.log-in {
   background-color: black;
 }
+.main-header.log-in nav .menus {
+  margin-right: 100px;
+}
 .main-header.log-in nav .menus li a {
   color: white;
+  padding: 10px 30px;
 }
 .main-header.log-in nav .menus li a.active {
   color: #BE0500;
@@ -179,7 +209,7 @@
   color: #BE0500;
   font-size: 32px;
   font-weight: bold;
-  padding: 12px 20px;
+  padding: 10px 30px;
 }
 .main-header nav .menus li a.router-link-exact-active {
   background-color: white;
@@ -190,15 +220,15 @@
 }
 .main-header nav .btns a {
   text-decoration: none;
-  line-height: 40px;
   display: inline-block;
-  font-size: 20px;
-  width: 160px;
+  font-size: 18px;
+  padding: 10px 50px;
   text-align: center;
   border-radius: 10px;
   color: white;
   border: 3px solid #BE0500;
   border-image: linear-gradient(#CC0913, #F07A34) 20 20;
+  white-space: nowrap;
 }
 .main-header nav .btns:hover {
   opacity: 0.8;
@@ -212,6 +242,9 @@
   border-radius: 40px;
   background-color: white;
   margin-right: 16px;
+}
+.main-header nav .imgs .img.avatar {
+  background-color: transparent;
 }
 .main-header nav .imgs .img a {
   font-size: 0;
@@ -282,7 +315,7 @@ footer .map {
   background-size: 100% 100%;
 }
 footer .map .container {
-  width: 1000px;
+  width: 90%;
   margin: auto;
 }
 footer .map .left h2 {
@@ -331,6 +364,7 @@ footer .info {
   font-size: 18px;
   background-color: #121212;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 720px) {
@@ -382,7 +416,9 @@ footer .info {
 .home .our-mission .item > div p {
   color: #ddd;
   line-height: 1.8;
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20px;
 }
 .home .our-programs {
   background-color: #121212;
@@ -413,6 +449,7 @@ footer .info {
 }
 .home .our-programs .list .item .left div {
   font-size: 20px;
+  color: #A7A7AD;
 }
 .home .our-programs .list .item .left p {
   color: gray;
@@ -500,13 +537,25 @@ footer .info {
 }
 .home .our-partners {
   background-color: #121212;
-  padding: 50px;
+  padding: 50px 0 80px;
   text-align: center;
 }
 .home .our-partners h2 {
   color: #970404;
   font-size: 48px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+.home .our-partners .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .our-partners .inner2 {
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+.home .our-partners .inner2 .item {
+  margin-right: 120px;
 }
 .home .our-partners .item {
   display: inline-block;
@@ -514,8 +563,7 @@ footer .info {
   margin-left: 10px;
 }
 .home .our-partners .item .img img {
-  width: 270px;
-  height: 220px;
+  width: 210px;
 }
 .home .our-partners .item h3 {
   color: white;
@@ -526,7 +574,7 @@ footer .info {
   background-image: url(../img/hand-of-referee-holding-puck-over-ice-rink-and-two-42RJUAZ.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 100px 0;
+  padding: 120px 0;
   position: relative;
 }
 .home .join-us .inner {
@@ -561,6 +609,7 @@ footer .info {
   margin: auto;
 }
 .home .join-us .content .btn {
+  flex-shrink: 0;
   text-align: right;
   margin: auto;
   transition: 0.3s ease-in-out;
@@ -614,6 +663,7 @@ footer .info {
   }
   .home .our-events img {
     margin-bottom: 20px;
+    height: auto !important;
   }
   .home .our-events .imgs .img2 .right img {
     margin-bottom: 0;
@@ -628,8 +678,12 @@ footer .info {
   .home .our-partners .title h2 {
     margin-bottom: 30px;
   }
-  .home .our-partners .content .item {
+  .home .our-partners .inner {
+    display: block;
+  }
+  .home .our-partners .inner .item {
     margin-bottom: 50px;
+    display: block;
   }
   .home .join-us {
     display: none;
@@ -671,8 +725,12 @@ footer .info {
   color: #970404;
   font-size: 48px;
   margin-bottom: 50px;
+  text-align: center;
 }
 .about .our-commitment .content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 700;
   color: white;
   font-size: 30px;
   margin-bottom: 15px;
@@ -742,6 +800,7 @@ footer .info {
 .about .our-services .title h2 {
   color: #970404;
   font-size: 48px;
+  text-align: center;
 }
 .about .our-services .content {
   text-align: center;
@@ -778,8 +837,11 @@ footer .info {
   margin-top: 50px;
 }
 .about .our-services .btn .link1 {
-  color: #970404;
-  font-size: 30px;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  text-decoration: none;
 }
 .about .our-services .btn .link2 {
   display: none;
@@ -906,14 +968,18 @@ footer .info {
 .contact .lets-chat .left {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .contact .lets-chat .left .text h3 {
-  color: #970404;
+  color: white;
   font-size: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 .contact .lets-chat .left .text p {
   color: white;
   font-size: 18px;
+  line-height: 2;
 }
 .contact .lets-chat .imgs {
   justify-content: center;
@@ -963,13 +1029,13 @@ footer .info {
 .contact .contact-form .item select {
   width: 100%;
   border-color: white;
-  padding: 3px 20px;
+  padding: 10px 10px;
   color: black;
   font-size: 20px;
 }
 .contact .contact-form .item p {
   color: gray;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 .contact .contact-form .item p span {
@@ -1252,6 +1318,9 @@ footer .info {
 .profile .left {
   margin-right: 60px;
 }
+.profile .left img {
+  height: 400px;
+}
 .profile .right {
   color: white;
   font-size: 24px;
@@ -1263,9 +1332,13 @@ footer .info {
 .profile .right div form p {
   margin: 20px 0;
 }
+.profile .right div form p span {
+  font-family: "Montserrat", sans-serif;
+}
 .profile .right div form p span:nth-child(1) {
   display: inline-block;
   width: 150px;
+  font-style: italic;
 }
 .profile .right div form p span:nth-child(2) {
   color: gray;
@@ -1274,6 +1347,10 @@ footer .info {
 .profile .right div form p span:nth-child(2) select {
   padding: 5px;
   width: 200px;
+  font-family: "Montserrat", sans-serif;
+}
+.profile .right div form p span:nth-child(2) option {
+  font-family: "Montserrat", sans-serif;
 }
 .profile .right div form .btn {
   text-align: right;
@@ -1322,6 +1399,7 @@ footer .info {
   }
   .profile .left img {
     width: 160px;
+    height: auto;
   }
   .profile .right {
     font-size: 18px;
@@ -1350,7 +1428,8 @@ footer .info {
 }
 .classes .title h2 {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 .classes .content .row1 {
   padding-bottom: 80px;
@@ -1424,20 +1503,25 @@ footer .info {
   background-color: #202020;
   padding: 50px 0 100px;
 }
-.task .title {
-  font-size: 30px;
+.task .title h2 {
+  font-size: 40px;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .task .calendar table {
   width: 100%;
   text-align: center;
+}
+.task .calendar table th,
+.task .calendar table td {
+  font-family: "Montserrat", sans-serif;
 }
 .task .calendar table thead tr th {
   background-color: #CB2025;
   padding: 20px 10px;
   color: white;
   font-size: 20px;
+  font-style: italic;
 }
 .task .calendar table tbody tr td {
   background-color: white;
@@ -1478,11 +1562,16 @@ footer .info {
     display: flex;
     align-items: center;
   }
+  .task .c2 .item p span {
+    font-family: "Montserrat", sans-serif;
+  }
   .task .c2 .item p:nth-child(even) span:nth-child(1) {
     background-color: #CB2025;
+    font-style: italic;
   }
   .task .c2 .item p:nth-child(odd) span:nth-child(1) {
     background-color: #3D3D3D;
+    font-style: italic;
   }
   .task .c2 .item p span {
     display: inline-block;
@@ -1518,6 +1607,10 @@ footer .info {
   margin-bottom: 20px;
   padding: 10px;
   font-size: 24px;
+  font-style: italic;
+}
+.reminder .item .title p {
+  font-family: "Montserrat", sans-serif;
 }
 .reminder .item .todos {
   margin-bottom: 50px;
@@ -1526,6 +1619,7 @@ footer .info {
   line-height: 1.8;
   font-size: 18px;
   display: flex;
+  font-family: "Montserrat", sans-serif;
 }
 .reminder .item .todos p.done {
   background-color: #1BBC48;

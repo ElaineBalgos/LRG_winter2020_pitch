@@ -1,3 +1,4 @@
+
 .contact {
 
     background-color: #000000;
@@ -28,16 +29,20 @@
         .left {
             display        : flex;
             justify-content: center;
+            text-align: center;
 
             .text {
                 h3 {
-                    color    : #970404;
+                    color    : white;
                     font-size: 30px;
+                    margin-bottom: 20px;
+                    letter-spacing: 1px;
                 }
 
                 p {
                     color    : white;
                     font-size: 18px;
+                    line-height: 2;
                 }
             }
 
@@ -105,14 +110,14 @@
             select {
                 width       : 100%;
                 border-color: white;
-                padding     : 3px 20px;
+                padding     : 10px 10px;
                 color       : black;
                 font-size   : 20px;
             }
 
             p {
                 color        : gray;
-                margin-bottom: 3px;
+                margin-bottom: 10px;
                 font-size    : 18px;
 
                 span {

@@ -14,11 +14,11 @@ export default {
                 </div>
                 <div class="content flex-between">
                     <div class="item">
-                        <p>In 2007, the London Referee Group, also known as the LRG, was
+                        <p class="montserrat">In 2007, the London Referee Group, also known as the LRG, was
                             established. This was the merger of the Forest City Referees
                             Association (FCRA) and the London Hockey Referees Association
                             (LHRA).</p>
-                        <p>The LRG provides on ice officials for games at various levels of hockey,
+                        <p class="montserrat">The LRG provides on ice officials for games at various levels of hockey,
                             such as: minor hockey, high school, sledge, and adult. As an
                             organization we strive to maintain an environment that embodies the
                             core values of integrity, leadership, perseverance, respect and
@@ -26,7 +26,7 @@ export default {
                             and cultivating a lifelong passion for the game.</p>
                     </div>
                     <div class="item">
-                        <p>LRG members commit to representing the vision and mission of the
+                        <p class="montserrat">LRG members commit to representing the vision and mission of the
                             London Referees Group. They encourage a high standard of ethics,
                             closer cooperation, and understanding of the role of the referee
                             among officials, coaches, players, parents, the community and the
@@ -50,11 +50,11 @@ export default {
                     <div class="top">
                         <div class="left">
                             <h3>Communication</h3>
-                            <p>We communicate our message with clarity, concision and confidence whilst actively listening. We are open minded and provide feedback.</p>
+                            <p class="montserrat">We communicate our message with clarity, concision and confidence whilst actively listening. We are open minded and provide feedback.</p>
                         </div>
                         <div class="right">
                             <h3>Passion</h3>
-                            <p>We are passionate about what we do, we challenge ourselves to achieve excellence.</p>
+                            <p class="montserrat">We are passionate about what we do, we challenge ourselves to achieve excellence.</p>
                         </div>
                     </div>
                     <div class="bottom">
@@ -62,21 +62,21 @@ export default {
                             <div class="lt flex-between">
                                 <div class="lt-l">
                                     <h3>Fairness</h3>
-                                    <p>We make sure everyone in our team act reasonable and follow the rules.</p>
+                                    <p class="montserrat">We make sure everyone in our team act reasonable and follow the rules.</p>
                                 </div>
                                 <div class="lt-r">
                                     <h3>Safe Play</h3>
-                                    <p>Safety is our priority both to our hockey players and referees.</p>
+                                    <p class="montserrat">Safety is our priority both to our hockey players and referees.</p>
                                 </div>
                             </div>
                             <div class="lb">
                                 <h3>Leadership</h3>
-                                <p>We develop and train our referees to motivate and inspire themselves and those around them to be their best versions.</p>
+                                <p class="montserrat">We develop and train our referees to motivate and inspire themselves and those around them to be their best versions.</p>
                             </div>
                         </div>
                         <div class="right">
                             <h3>Respect</h3>
-                                <p>We believe Respect to each other will guide us in all our games. We treat people with courtesy, politeness and kindness. We encourage referees to express opinions and ideas. We treat others as they wish to be treated. </p>
+                                <p class="montserrat">We believe Respect to each other will guide us in all our games. We treat people with courtesy, politeness and kindness. We encourage referees to express opinions and ideas. We treat others as they wish to be treated. </p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ export default {
                     </div>
                 </div>
                 <div class="btn">
-                    <router-link class="link1" :to="{ name: 'Contact' }">More Questions? Contact Us! --></router-link>
+                    <router-link class="link1" :to="{ name: 'Contact' }">More Questions? Click HERE to Contact Us!</router-link>
                     <router-link class="link2" :to="{ name: 'Contact' }">CONTACT US --></router-link>
                     <!-- <a class="link1" href="./contact.html">More Questions? Contact Us!</a>
                     <a class="link2" href="./contact.html">CONTACT US</a> -->
@@ -118,5 +118,8 @@ export default {
 
     created: function() {
         console.log("About page created");
+    },
+    mounted:function(){
+        document.body.scrollTop=document.documentElement.scrollTop=0;
     }
 }

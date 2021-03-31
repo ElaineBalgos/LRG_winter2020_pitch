@@ -2,24 +2,36 @@
 .main-header {
     padding         : 30px 0 0;
     background-color: #202020;
-    &.log-in{
+
+    .container {
+        width: 96%;
+    }
+
+    &.log-in {
         background-color: black;
-        nav{
-            .menus{
-                li{
-                    a{
-                        color: white;
-                        &.active{
+
+        nav {
+            .menus {
+                margin-right: 100px;
+
+                li {
+                    a {
+                        color  : white;
+                        padding: 10px 30px;
+
+                        &.active {
                             color: #BE0500;
                         }
                     }
                 }
             }
-            .imgs{
-                color: white;
+
+            .imgs {
+                color      : white;
                 align-items: center;
-                .img{
-                    img{
+
+                .img {
+                    img {
                         width: 100%;
                     }
                 }
@@ -30,7 +42,8 @@
     h2 {
         color    : white;
         font-size: 49px;
-        img{
+
+        img {
             height: 60px;
         }
     }
@@ -47,15 +60,16 @@
                     color          : #BE0500;
                     font-size      : 32px;
                     font-weight    : bold;
-                    padding        : 12px 20px;
+                    padding: 10px 30px;
 
                     // &.active {
                     //     background-color: white;
                     // }
 
-                    &.router-link-exact-active { /////////////////////
+                    &.router-link-exact-active {
+                        /////////////////////
                         background-color: white;
-                        color          : #BE0500;
+                        color           : #BE0500;
                     }
                 }
             }
@@ -68,15 +82,15 @@
         .btns {
             a {
                 text-decoration: none;
-                line-height    : 40px;
                 display        : inline-block;
-                font-size      : 20px;
-                width          : 160px;
+                font-size      : 18px;
+                padding        : 10px 50px;
                 text-align     : center;
                 border-radius  : 10px;
                 color          : white;
                 border         : 3px solid #BE0500;
                 border-image   : linear-gradient(#CC0913, #F07A34) 20 20;
+                white-space: nowrap;
             }
         }
 
@@ -94,7 +108,11 @@
                 background-color: white;
                 margin-right    : 16px;
 
-                a{
+                &.avatar {
+                    background-color: transparent;
+                }
+
+                a {
                     font-size: 0;
                 }
 
@@ -116,7 +134,8 @@
 
         h2 {
             font-size: 32px;
-            img{
+
+            img {
                 height: 26px;
             }
         }
@@ -143,8 +162,8 @@
                     top             : 49px;
                     right           : 0;
                     background-color: #ddd;
-                    z-index: 9999;
-                    list-style-type: none;
+                    z-index         : 9999;
+                    list-style-type : none;
 
                     &.active {
                         display: block;
@@ -155,8 +174,8 @@
                             color          : #444;
                             font-size      : 13px;
                             text-decoration: none;
-                            padding: 10px 30px;
-                            display: inline-block;
+                            padding        : 10px 30px;
+                            display        : inline-block;
                         }
                     }
                 }

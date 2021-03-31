@@ -1,4 +1,4 @@
-import HomePage from "./components/HomePageComponent.js";     
+import HomePage from "./components/HomePageComponent.js";
 import AboutPage from "./components/AboutPageComponent.js";
 import ContactPage from "./components/ContactPageComponent.js";
 import LoginPage from "./components/LoginPageComponent.js";
@@ -9,32 +9,32 @@ import UserReminderPage from "./components/UserReminderPageComponent.js";
 import Header from "./components/Header/HeaderComponent.js";
 import Footer from "./components/Footer/FooterComponent.js";
 
-(()=>{
+(() => {
 
     console.log("fired");
 
     const router = new VueRouter({
         routes: [
             {
-                path: "/", 
-                name:"Home", 
+                path: "/",
+                name: "Home",
                 component: HomePage,
             },
-            { 
-                path: "/about", 
-                name: "About", 
+            {
+                path: "/about",
+                name: "About",
                 component: AboutPage,
             },
-            { 
-                path: "/contact", 
-                name: "Contact", 
+            {
+                path: "/contact",
+                name: "Contact",
                 component: ContactPage,
             },
-            { 
-                path: "/login", 
-                name: "Login", 
+            {
+                path: "/login",
+                name: "Login",
                 component: LoginPage,
-                beforeEnter: (to, from , next) => {
+                beforeEnter: (to, from, next) => {
                     if (localStorage.getItem("user_id") === null) {
                         next();
                     } else {
@@ -42,11 +42,11 @@ import Footer from "./components/Footer/FooterComponent.js";
                     }
                 }
             },
-            { 
-                path: "/profile", 
-                name: "UserProfile", 
+            {
+                path: "/profile",
+                name: "UserProfile",
                 component: UserProfilePage,
-                beforeEnter: (to, from , next) => {
+                beforeEnter: (to, from, next) => {
                     if (localStorage.getItem("user_id") === null) {
                         next("/login");
                     } else {
@@ -54,11 +54,11 @@ import Footer from "./components/Footer/FooterComponent.js";
                     }
                 }
             },
-            {   
-                path: "/classes", 
-                name: "UserClasses", 
+            {
+                path: "/classes",
+                name: "UserClasses",
                 component: UserClassesPage,
-                beforeEnter: (to, from , next) => {
+                beforeEnter: (to, from, next) => {
                     if (localStorage.getItem("user_id") === null) {
                         next("/login");
                     } else {
@@ -66,11 +66,11 @@ import Footer from "./components/Footer/FooterComponent.js";
                     }
                 }
             },
-            { 
-                path: "/task", 
-                name: "UserTask", 
+            {
+                path: "/task",
+                name: "UserTask",
                 component: UserTaskPage,
-                beforeEnter: (to, from , next) => {
+                beforeEnter: (to, from, next) => {
                     if (localStorage.getItem("user_id") === null) {
                         next("/login");
                     } else {
@@ -78,11 +78,11 @@ import Footer from "./components/Footer/FooterComponent.js";
                     }
                 }
             },
-            { 
-                path: "/reminder", 
-                name: "UserReminder", 
+            {
+                path: "/reminder",
+                name: "UserReminder",
                 component: UserReminderPage,
-                beforeEnter: (to, from , next) => {
+                beforeEnter: (to, from, next) => {
                     if (localStorage.getItem("user_id") === null) {
                         next("/login");
                     } else {
@@ -104,16 +104,16 @@ import Footer from "./components/Footer/FooterComponent.js";
             username: "",
         },
 
-        created: function() {
+        created: function () {
             console.log("here");
         },
 
         methods: {
-            isActive(route){
+            isActive(route) {
                 return this.$router.currentRoute.path === route;
             },
 
-            setAuthentication(setting, user){
+            setAuthentication(setting, user) {
                 console.log("set authentication");
                 this.authenticated = setting;
                 if (user !== {}) {

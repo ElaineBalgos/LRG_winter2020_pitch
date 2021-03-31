@@ -37,7 +37,9 @@
                 p {
                     color      : #ddd;
                     line-height: 1.8;
-                    font-size  : 30px;
+                    font-size  : 20px;
+                    text-align: center;
+                    padding: 0 20px;
                 }
             }
         }
@@ -77,6 +79,7 @@
                     }
                     div{
                         font-size: 20px;
+                        color: #A7A7AD;
                     }
                     p{
                         color: gray;
@@ -202,15 +205,28 @@
 
     .our-partners {
         background-color: #121212;
-        padding         : 50px;
+        padding         : 50px 0 80px;
         text-align: center;
         
         h2 {
             color        : #970404 ;
             font-size    : 48px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
             
+        .inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .inner2{
+            justify-content: flex-start;
+            margin-top: 50px;
+            .item{
+                margin-right: 120px;
+            }
+        }
 
         .item{
             display: inline-block;
@@ -219,8 +235,7 @@
 
             .img {
                 img {
-                    width : 270px;
-                    height: 220px;
+                    width : 210px;
                 }
             }
 
@@ -236,7 +251,7 @@
         background-image : url(../img/hand-of-referee-holding-puck-over-ice-rink-and-two-42RJUAZ.jpg);
         background-repeat: no-repeat;
         background-size  : 100% 100%;
-        padding          : 100px 0;
+        padding          : 120px 0;
         position: relative;
 
         .inner{
@@ -277,6 +292,7 @@
             }
 
             .btn {
+                flex-shrink: 0;
                 text-align: right;
                 margin    : auto;
                 transition: .3s ease-in-out;
@@ -383,6 +399,7 @@
                 }
                 img{
                     margin-bottom: 20px;
+                    height: auto !important;
                 }
                 .imgs .img2 .right img{
                     margin-bottom: 0;
@@ -399,9 +416,11 @@
                         margin-bottom: 30px;
                     }
                 }
-                .content{
+                .inner{
+                    display: block;
                     .item{
                         margin-bottom: 50px;
+                        display: block;
                     }
                 }
             }

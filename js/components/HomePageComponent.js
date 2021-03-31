@@ -13,9 +13,9 @@ export default {
                         <h2>Our Mission</h2>
                         <div>
                             <div>
-                                <p>The London Referees Group is committed to providing a</p>
-                                <p>high standard and quality hockey officiating in the City of</p>
-                                <p>London and surrounding area.</p>
+                                <p class="montserrat">The London Referees Group is committed to providing a</p>
+                                <p class="montserrat">high standard and quality hockey officiating in the City of</p>
+                                <p class="montserrat">London and surrounding area.</p>
                             </div>
                         </div>
                     </div>
@@ -23,9 +23,9 @@ export default {
                         <h2>Our Vision</h2>
                         <div>
                             <div>
-                                <p>To promote the game of hockey through fair and safe</p>
-                                <p>play, and a respect for all individuals involved in the</p>
-                                <p>game.</p>
+                                <p class="montserrat">To promote the game of hockey through fair and safe</p>
+                                <p class="montserrat">play, and a respect for all individuals involved in the</p>
+                                <p class="montserrat">game.</p>
                             </div>
                         </div>
                     </div>
@@ -35,14 +35,14 @@ export default {
                 <div class="container">
                     <div class="title">
                         <h2>Our Programs</h2>
-                        <p>You will have three very interesting learning programs to choose from.</p>
+                        <p class="montserrat">You will have three very interesting learning programs to choose from.</p>
                     </div>
                     <div class="list">
                         <div class="item flex-between-center">
                             <div class="left">
                                 <h3>Partner Education</h3>
                                 <div>Locations: London, Ontario</div>
-                                <p>Are you a full-time dad and mom now but still having a referees dream? JOIN US today to fulfill your dream and let us take care of your children.</p>
+                                <p class="montserrat">Are you a full-time dad and mom now but still having a referees dream? JOIN US today to fulfill your dream and let us take care of your children.</p>
                             </div>
                             <div class="right">
                                 <router-link :to="{ name: 'Contact' }" class="hoverable apply-btn">
@@ -54,7 +54,7 @@ export default {
                             <div class="left">
                                 <h3>Training Camps (Don Koharski)</h3>
                                 <div>Locations: London, Ontario</div>
-                                <p>Whether your goal is to learn the basics to get you started, move up to the Pee Wee level, JR. hockey or get exposed to the professional ranks, our camps are designed to provide you that exposure and the necessary tools needed to enhance your officiating skills.</p>
+                                <p class="montserrat">Whether your goal is to learn the basics to get you started, move up to the Pee Wee level, JR. hockey or get exposed to the professional ranks, our camps are designed to provide you that exposure and the necessary tools needed to enhance your officiating skills.</p>
                             </div>
                             <div class="right">
                                 <router-link :to="{ name: 'Contact' }" class="hoverable apply-btn">
@@ -66,7 +66,7 @@ export default {
                             <div class="left">
                                 <h3>Junior Officials (Overview of the program and timeline for joining)</h3>
                                 <div>Locations: London, Ontario</div>
-                                <p>Junior Officials is a referee training program for kids from age 5 to 9. We look for young skaters who are willing to learn and have desires to become a referee.</p>
+                                <p class="montserrat">Junior Officials is a referee training program for kids from age 5 to 9. We look for young skaters who are willing to learn and have desires to become a referee.</p>
                             </div>
                             <div class="right">
                                 <router-link :to="{ name: 'Contact' }" class="hoverable apply-btn">
@@ -81,7 +81,7 @@ export default {
                 <div class="container">
                     <div class="title">
                         <h2>Our Events</h2>
-                        <p>Welcome to our most exciting event, which also records our daily work.</p>
+                        <p class="montserrat">Welcome to our most exciting event, which also records our daily work.</p>
                     </div>
                     <div class="imgs">
                         <div class="img1 flex-between">
@@ -121,26 +121,38 @@ export default {
 
             <div class="our-partners">
                 <h2>Our Partners</h2>
+                <div class="inner container">
+                <div class="item partner">
+                    <div class="img"><img src="./img/canada.png" alt="">
+                    </div>
+                </div>
+                <div class="item partner">
+                    <div class="el-icon-message img"><img src="./img/ohf.png" alt="">
+                    </div>
+                </div>
+                <div class="item partner">
+                    <div class="img"><img src="./img/allence.png" alt="">
+                    </div>
+                </div>
+                <div class="item partner">
+                    <div class="img"><img src="./img/omha.png" alt="">
+                    </div>
+                </div>
+                </div>
 
+                <div class="inner inner2 container">
                 <div class="item partner">
-                    <div class="img"><img src="./img/20210317133227.jpg" alt="">
+                    <div class="img"><img src="./img/oha.png" alt="">
                     </div>
-                    <h3>Hokey Canada</h3>
                 </div>
                 <div class="item partner">
-                    <div class="el-icon-message"><img src="./img/20210317133235.jpg" alt="">
+                    <div class="el-icon-message img"><img src="./img/sportability.png" alt="">
                     </div>
-                    <h3>OHF</h3>
                 </div>
                 <div class="item partner">
-                    <div class="img"><img src="./img/20210317133220.jpg" alt="">
+                    <div class="img"><img src="./img/wha.png" alt="">
                     </div>
-                    <h3>Alliance</h3>
                 </div>
-                <div class="item partner">
-                    <div class="img"><img src="./img/20210317133242.jpg" alt="">
-                    </div>
-                    <h3>OMHA</h3>
                 </div>
             </div>
             <!-- <div class="our-partners">
@@ -180,11 +192,11 @@ export default {
                     </div>
                     <div class="content flex-between-center">
                         <div class="text">
-                            <p>You will become an excellent referee! Join us and let us witness this wonderful and successful process together.</p>
+                            <p class="montserrat">You will become an excellent referee! Join us and let us witness this wonderful and successful process together.</p>
                         </div>
                         <div class="btn">
                             <router-link :to="{ name: 'Login' }" class="hoverable">
-                                <div class="anim"></div>LOG IN
+                                <div class="anim"></div>LOGIN
                             </router-link>
                         </div>
                     </div>
@@ -195,5 +207,8 @@ export default {
 
     created: function() {
         console.log("Home page created");
+    },
+    mounted:function(){
+        document.body.scrollTop=document.documentElement.scrollTop=0;
     }
 }

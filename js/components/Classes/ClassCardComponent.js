@@ -8,10 +8,10 @@ export default {
     <div class="item">
         <div class="video"><video :src="video" controls></video></div>
         <div class="title flex-between">
-            <h3>{{ topic }}</h3>
-            <p>{{ length }}</p>
+            <h3 class="montserrat italic">{{ topic }}</h3>
+            <p class="montserrat italic">{{ length }}</p>
         </div>
-        <p>{{ description }}</p>
+        <p class="montserrat">{{ description }}</p>
     </div>
 
     `,
