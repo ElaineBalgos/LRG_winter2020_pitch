@@ -1,8 +1,9 @@
 export default {
     name: "TheUserHeaderComponent",
 
-    template:
-    `
+    props: ["username"],
+
+    template:`
     <header class="main-header log-in">
         <div class="container flex-between">
             <h2><router-link :to="{ name: 'Home' }"><img src="./img/logo.png" alt=""></router-link></h2>
@@ -42,7 +43,6 @@ export default {
 
     data: function(){
         return {
-            username: localStorage.getItem("user_name") === null ? "" : localStorage.getItem("user_name"),
             toggled: false
         }
     },

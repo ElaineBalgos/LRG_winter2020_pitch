@@ -1,8 +1,7 @@
 export default {
     name: "TheHomePage",
 
-    template:
-    `
+    template:`
         <div class="home">
             <div class="slogn">
                 <video src="./media/home.mp4" controls></video>
@@ -64,7 +63,7 @@ export default {
                         </div>
                         <div class="item flex-between-center">
                             <div class="left">
-                                <h3>Junior Officials (Overview of the program and timeline for joining)</h3>
+                                <h3>Junior Officials</h3>
                                 <div>Locations: London, Ontario</div>
                                 <p class="montserrat">Junior Officials is a referee training program for kids from age 5 to 9. We look for young skaters who are willing to learn and have desires to become a referee.</p>
                             </div>
@@ -123,35 +122,34 @@ export default {
                 <h2>Our Partners</h2>
                 <div class="inner container">
                 <div class="item partner">
-                    <div class="img"><img src="./img/canada.png" alt="">
-                    </div>
+                    <a class="img" href="https://www.hockeycanada.ca/en-ca/home" target="_blank"> <img src="./img/canada-colour.png" alt="Hockey Canada Logo"></a>
                 </div>
                 <div class="item partner">
-                    <div class="el-icon-message img"><img src="./img/ohf.png" alt="">
-                    </div>
+                    <a class="el-icon-message img" href="https://www.ohf.on.ca/" target="_blank"><img src="./img/ohf-colour.png" alt="">
+                    </a>
                 </div>
                 <div class="item partner">
-                    <div class="img"><img src="./img/allence.png" alt="">
-                    </div>
+                    <a class="img" href="https://alliancehockey.com/" target="_blank"><img src="./img/allence-colour.png" alt="">
+                    </a>
                 </div>
                 <div class="item partner">
-                    <div class="img"><img src="./img/omha.png" alt="">
-                    </div>
+                    <a class="img" href="https://www.omha.net" target="_blank"><img src="./img/omha-colour.png" alt="">
+                    </a>
                 </div>
                 </div>
 
                 <div class="inner inner2 container">
                 <div class="item partner">
-                    <div class="img"><img src="./img/oha.png" alt="">
-                    </div>
+                    <a class="img" href="http://www.ohahockey.ca" target="_blank"><img src="./img/oha-colour.png" alt="">
+                    </a>
                 </div>
                 <div class="item partner">
-                    <div class="el-icon-message img"><img src="./img/sportability.png" alt="">
-                    </div>
+                    <a class="el-icon-message img" href="https://sportabilitybc.ca" target="_blank"><img src="./img/sportability-colour.png" alt="">
+                    </a>
                 </div>
                 <div class="item partner">
-                    <div class="img"><img src="./img/wha.png" alt="">
-                    </div>
+                    <a class="img" href="https://www.owha.on.ca" target="_blank"><img src="./img/wha-colour.png" alt="">
+                    </a>
                 </div>
                 </div>
             </div>

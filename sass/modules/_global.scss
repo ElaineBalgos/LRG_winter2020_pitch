@@ -113,13 +113,13 @@
     z-index : 0;
 }
 
-.hoverable:hover>.anim {
-    animation: anim-out 0.75s;
-}
+// .hoverable:hover>.anim {
+//     animation: anim-out 0.75s;
+// }
 
-.hoverable:hover>.anim:after {
-    animation: anim-out-pseudo 0.75s;
-}
+// .hoverable:hover>.anim:after {
+//     animation: anim-out-pseudo 0.75s;
+// }
 
 
 .anim {
@@ -147,7 +147,7 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
 
     .container {
         width: 100%;

@@ -14,7 +14,7 @@
 
         .our-story {
             background-color: #202020;
-            padding         : 100px 0;
+            padding         : 40px 0;
 
             .title {
                 margin-bottom: 50px;
@@ -46,13 +46,14 @@
 
         .our-commitment {
             background-color: #121212;
-            padding         : 50px;
+            padding-bottom: 40px;
 
             h2 {
                 color        : #970404;
                 font-size    : 48px;
                 margin-bottom: 50px;
                 text-align: center;
+                padding-top: 40px;
             }
 
             .content {
@@ -137,7 +138,7 @@
 
         .our-services {
             background-color: #212121;
-            padding         : 50px;
+            padding: 40px 0;
 
             .title {
                 margin-bottom: 50px;
@@ -195,6 +196,8 @@
             .btn {
                 text-align: center;
                 margin-top: 50px;
+                cursor: pointer;
+                transition-duration: .3s;
 
                 .link1 {
                     color    : white;
@@ -223,7 +226,7 @@
 }
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .about {
             .slogn {
                 margin-top: 0;
@@ -308,6 +311,9 @@
                     }
                 }
                 .btn{
+                    cursor: pointer;
+                    transition-duration: .3s;
+
                     .link1{
                         display: none;
                     }

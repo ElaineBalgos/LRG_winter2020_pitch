@@ -59,8 +59,10 @@
                     }
 
                     .btn {
+                        cursor: pointer;
                         text-align: right;
                         margin-top: 30px;
+                        transition-duration: .3s;
 
                         input {
                             display         : inline-block;
@@ -91,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .profile {
         .main-header {
             &.log-in {
@@ -142,6 +144,9 @@
                         }
 
                         .btn {
+                            cursor: pointer;
+                            transition-duration: .3s;
+
                             input {
                                 width: 100%;
                             }

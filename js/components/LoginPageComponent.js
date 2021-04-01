@@ -69,6 +69,7 @@ export default {
                         this.$emit("setauth", true, data);
                         localStorage.setItem("user_id", data.user_id);
                         localStorage.setItem("user_name", data.user_name);
+                        
                         this.$router.replace({ name: "UserProfile" }); 
 
                     } else {

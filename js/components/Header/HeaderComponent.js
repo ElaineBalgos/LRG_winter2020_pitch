@@ -4,12 +4,11 @@ import VisitorHeader from "./VisitorHeaderComponent.js";
 export default {
     name: "TheHeaderComponent",
 
-    props: ["auth", "route"],
+    props: ["auth", "uname", "route"],
 
-    template:     
-    `
+    template:`
     <visitorheader v-if="!auth || (auth && routes1.includes(route))" ></visitorheader>
-    <userheader v-else @logout="hasLoggedOut"></userheader>
+    <userheader v-else @logout="hasLoggedOut" :username="uname"></userheader>
     `,
 
     data: function(){

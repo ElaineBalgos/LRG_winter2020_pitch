@@ -71,6 +71,8 @@
                 .btn {
                     padding   : 30px 0 60px;
                     text-align: right;
+                    cursor: pointer;
+                    transition-duration: .3s;
 
                     input {
                         display         : inline-block;
@@ -94,7 +96,7 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .program{
         main{
             margin-top: 0;
@@ -112,7 +114,9 @@
                 form{
                     margin-left: 0;
                     .btn{
+                        cursor: pointer;
                         text-align: center;
+                        transition-duration: .3s;
                     }
 
                     .btn:hover {

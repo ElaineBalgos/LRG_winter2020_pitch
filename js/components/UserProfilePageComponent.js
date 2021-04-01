@@ -1,8 +1,7 @@
 export default {
     name: "TheProfilePage",
 
-    template:
-    `
+    template:`
     <div class="profile">
         <div class="container flex">
             <h2 class="title">Personal Details</h2>
@@ -113,9 +112,13 @@ export default {
                 .then(data => {
                     if (typeof data === "object"){
                         console.log("edit user successfully");
+                        console.log(data);
 
                         this.displayMsg = "You have successfully edited your profile.";
                         this.input.password = "";
+
+                        localStorage.setItem("user_name", data.user_name);
+                        this.$emit("setauth", true, data);
         
                     } else {
                         console.log("edit user info failed");

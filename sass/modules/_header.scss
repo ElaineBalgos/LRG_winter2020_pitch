@@ -20,7 +20,7 @@
                         padding: 10px 30px;
 
                         &.active {
-                            color: #BE0500;
+                            color: #be0500;
                         }
                     }
                 }
@@ -57,7 +57,7 @@
                 a {
                     display        : inline-block;
                     text-decoration: none;
-                    color          : #BE0500;
+                    color          : #be0500;
                     font-size      : 32px;
                     font-weight    : bold;
                     padding: 10px 30px;
@@ -69,7 +69,7 @@
                     &.router-link-exact-active {
                         /////////////////////
                         background-color: white;
-                        color           : #BE0500;
+                        color           : #be0500;
                     }
                 }
             }
@@ -80,6 +80,9 @@
         }
 
         .btns {
+            cursor: pointer;
+            transition-duration: .3s;
+
             a {
                 text-decoration: none;
                 display        : inline-block;
@@ -88,7 +91,7 @@
                 text-align     : center;
                 border-radius  : 10px;
                 color          : white;
-                border         : 3px solid #BE0500;
+                border         : 3px solid #be0500;
                 border-image   : linear-gradient(#CC0913, #F07A34) 20 20;
                 white-space: nowrap;
             }
@@ -124,7 +127,7 @@
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .main-header {
         padding: 0;
 

@@ -16,9 +16,10 @@ export default {
                     </div>
                 </div>
                 <div class="imgs flex">
-                    <div class="img flex-center-center"><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt=""></a></div>
-                    <div class="img flex-center-center"><a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a></div>
-                    <div class="img flex-center-center"><a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png" alt=""></a></div>
+                    <div class="img flex-center-center"><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.png" alt=""></a></div>
                 </div>
             </div>
         </div>
@@ -47,8 +48,8 @@ export default {
                     <div class="item">
                         <p class="montserrat">Reason to Contact<span>*</span></p>
                         <select id="reason" v-model="input.reason" required>
-                            <option value="1">Sign Up</option>
-                            <option value="2">Questions</option>
+                            <option value="1">Apply Program</option>
+                            <option value="2">General Inquiries</option>
                         </select>
                     </div>
                     <div class="item">

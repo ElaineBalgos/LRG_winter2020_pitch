@@ -99,9 +99,9 @@ import Footer from "./components/Footer/FooterComponent.js";
 
     const vm = new Vue({
         data: {
-            authenticated: localStorage.getItem("user_id") === null ? false : true,//false,
-            userid: "",
-            username: "",
+            authenticated: localStorage.getItem("user_id") === null ? false : true,
+            userid: localStorage.getItem("user_id") === null ? "" : localStorage.getItem("user_id"),
+            username: localStorage.getItem("user_name") === null ? "" : localStorage.getItem("user_name")
         },
 
         created: function () {

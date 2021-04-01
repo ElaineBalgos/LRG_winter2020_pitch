@@ -101,6 +101,7 @@
 
                     input {
                         width: 98%;
+                        border: none;
                     }
                 }
             }
@@ -109,7 +110,8 @@
             textarea,
             select {
                 width       : 100%;
-                border-color: white;
+                // border-color: white;
+                border: none;
                 padding     : 10px 10px;
                 color       : black;
                 font-size   : 20px;
@@ -128,8 +130,10 @@
         }
 
         .btn {
+            cursor: pointer;
             padding   : 30px 0 60px;
             text-align: right;
+            transition-duration: .3s;
 
             input {
                 display         : inline-block;
@@ -138,8 +142,9 @@
                 border          : none;
                 text-align      : center;
                 color           : white;
+                border: none;
+                cursor: pointer;
                 background-image: linear-gradient(to right, #CC0913, #F07A34);
-                cursor          : pointer;
                 background-color: transparent;
                 font-size       : 20PX;
             }
@@ -152,7 +157,7 @@
 
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
 
     .contact {
             .lets-chat {
@@ -181,9 +186,13 @@
                         }
                     }
                     .btn{
+                        cursor: pointer;
                         text-align: center;
+                        transition-duration: .3s;
+
                         input{
                             width: 100%;
+                            border: none;
                         }
                     }
                     .btn:hover {

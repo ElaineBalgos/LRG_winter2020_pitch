@@ -1,11 +1,13 @@
 
 footer {
+
     .map {
         color            : #ddd;
         padding          : 40px 0;
         background-image : url(../img/footer-bg.png);
         background-repeat: no-repeat;
         background-size  : 100% 100%;
+        display: none;
 
         .container {
             width : 90%;
@@ -76,12 +78,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     footer {
         .map {
             background-image: none;
             background-color: #BE0711;
             text-align      : center;
+            display: block;
 
             .container {
                 width  : 100%;
