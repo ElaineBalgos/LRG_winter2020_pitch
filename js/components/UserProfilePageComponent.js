@@ -6,10 +6,8 @@ export default {
 
     template:`
     <div class="profile">
-        <memberprofile @edituser="onChange"></memberprofile>
+        <memberprofile @edituser="onChange" ref="currusersinfo"></memberprofile>
         <adminprofile v-if="user_level==='1'" ref="allusersinfo"></adminprofile>
-        <!-- <memberprofile @dbchange="reRender" :watch="[user_name, user_email]"></memberprofile> -->
-        <!-- <adminprofile v-if="user_level==='1'" :watch="[user_name, user_email]"></adminprofile> -->
     </div>
     `,
 
@@ -26,14 +24,13 @@ export default {
     },
 
     methods: {
-        // reRender() {
-        //     console.log("re render");
-        // }
         onChange(msg) {
             console.log(msg);
             if (this.user_level==="1") {
                 this.$refs.allusersinfo.users = [];
                 this.$refs.allusersinfo.getAllUsers();
+
+                this.$refs.currusersinfo = {};
             }
         }
     },

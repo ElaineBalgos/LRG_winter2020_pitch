@@ -64,7 +64,6 @@ export default {
 
         clickSave() {
             console.log("click save");
-            this.editable = false;
 
             if (this.input.firstname.trimStart() !== "" && 
                 this.input.lastname.trimStart() !== "" && 
@@ -73,6 +72,8 @@ export default {
                 this.input.level.trimStart() !== ""){
 
                 console.log("send");
+
+                this.editable = false;
 
                 let formData = new FormData();
                 
@@ -122,7 +123,10 @@ export default {
                     }
                 })
                 .catch(err => console.error(err));
-            }
+            } else {
+                this.editable = true;
+                this.$emit("displaymsg", "Please fill out the form."); 
+            }  
         },
 
         clickDelete() {

@@ -38,7 +38,7 @@ export default {
 
             <!-- mobile -->
             <div class="c2">
-                <h2>All Members</h2>
+                <!-- <h2>All Members</h2> -->
                 <div class="item">
                     <p class="note">Please note that based on policy, users' profile is not editable in mobile version.</p>
                     <userrecordmobile v-for="(u,i) in users" :key="u.user_id" :user="u" :index="i+1"></userrecordmobile>
