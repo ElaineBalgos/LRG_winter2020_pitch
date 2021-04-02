@@ -17,9 +17,9 @@
     <main id="app">
         <div id="page">
 
-            <headercomp v-if="!isActive('/login')" :auth="authenticated" :uname="username" :route="$router.currentRoute.path" @setauth="setAuthentication"></headercomp>
+            <headercomp v-if="!isActive('/login')" :auth="authenticated" :uname="username" :route="$router.currentRoute.path"></headercomp>
 
-            <router-view @setauth="setAuthentication"></router-view>
+            <router-view></router-view>
             
             <footercomp v-if="!isActive('/login')" :auth="authenticated" :route="$router.currentRoute.path"></footercomp>
         </div>

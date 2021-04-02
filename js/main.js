@@ -101,7 +101,8 @@ import Footer from "./components/Footer/FooterComponent.js";
         data: {
             authenticated: localStorage.getItem("user_id") === null ? false : true,
             userid: localStorage.getItem("user_id") === null ? "" : localStorage.getItem("user_id"),
-            username: localStorage.getItem("user_name") === null ? "" : localStorage.getItem("user_name")
+            username: localStorage.getItem("user_name") === null ? "" : localStorage.getItem("user_name"),
+            userlevel: localStorage.getItem("user_level") === null ? 0 : localStorage.getItem("user_level")
         },
 
         created: function () {

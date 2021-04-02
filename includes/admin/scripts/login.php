@@ -19,10 +19,12 @@ function login($username, $password) {
 
         $user = array(
             "user_id" => $found_user_id,
-            "user_name" => $found_user["user_name"]
+            "user_name" => $found_user["user_name"],
+            "user_level" => $found_user["user_level"],
         );
         
         return $user;
+
     } else {
         // This is invalid attempt, reject it!
         return "The username or password is not correct. Please try again"; 
