@@ -1259,7 +1259,7 @@ footer .info {
   background-color: rgba(43, 43, 43, 0.8);
   width: 500px;
   margin: auto;
-  padding: 10px 50px;
+  padding: 50px 50px 10px 50px;
 }
 .login .login-box h2 {
   color: white;
@@ -1286,9 +1286,9 @@ footer .info {
   margin-bottom: 20px;
 }
 .login .login-box form .item input {
-  padding: 10px;
+  padding: 14px;
   width: 100%;
-  border-radius: 6px;
+  border: none;
   border-color: white;
   color: black;
 }
