@@ -1,10 +1,10 @@
 export default {
     name: "TheAboutPage",
 
-    template: `
+    template:`
     <div class="about">
         <div class="slogn">
-            <video src="./media/about.mp4" controls ></video>
+            <video src="./media/about.mp4" controls></video>
         </div>
         <div class="our-story">
             <div class="container">
@@ -115,10 +115,10 @@ export default {
     </div>
     `,
 
-    created: function () {
+    created: function() {
         console.log("About page created");
     },
-    mounted: function () {
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    mounted:function(){
+        document.body.scrollTop=document.documentElement.scrollTop=0;
     }
 }

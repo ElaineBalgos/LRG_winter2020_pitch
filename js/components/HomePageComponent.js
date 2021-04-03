@@ -1,7 +1,7 @@
 export default {
     name: "TheHomePage",
 
-    template: `
+    template:`
         <div class="home">
             <div class="slogn">
                 <video src="./media/home.mp4" controls muted autoplay="autoplay"></video>
@@ -203,10 +203,10 @@ export default {
         </div>
     `,
 
-    created: function () {
+    created: function() {
         console.log("Home page created");
     },
-    mounted: function () {
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    mounted:function(){
+        document.body.scrollTop=document.documentElement.scrollTop=0;
     }
 }

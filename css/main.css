@@ -385,6 +385,26 @@ footer .info {
     justify-content: center;
   }
 }
+footer {
+  position: relative;
+}
+
+.topbtn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+}
+
+.topbtn img {
+  width: 75px;
+}
+
+@media screen and (max-width: 860px) {
+  .topbtn img {
+    width: 70px;
+  }
+}
 .home .slogn {
   margin-top: 10px;
   font-size: 0;
