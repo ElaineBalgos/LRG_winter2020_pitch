@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Mar 30, 2021 at 04:59 AM
--- Server version: 5.7.31
--- PHP Version: 7.3.21
+-- Host: mysql
+-- Generation Time: Apr 02, 2021 at 05:20 PM
+-- Server version: 10.3.27-MariaDB-1:10.3.27+maria~focal
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,15 +27,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `tbl_class`
 --
 
-DROP TABLE IF EXISTS `tbl_class`;
-CREATE TABLE IF NOT EXISTS `tbl_class` (
-  `class_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `tbl_class` (
+  `class_id` int(11) NOT NULL,
   `class_topic` varchar(250) NOT NULL,
   `class_length` varchar(25) NOT NULL,
   `class_description` varchar(500) NOT NULL,
-  `class_video` varchar(30) NOT NULL,
-  PRIMARY KEY (`class_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  `class_video` varchar(30) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_class`
@@ -52,18 +50,16 @@ INSERT INTO `tbl_class` (`class_id`, `class_topic`, `class_length`, `class_descr
 -- Table structure for table `tbl_task`
 --
 
-DROP TABLE IF EXISTS `tbl_task`;
-CREATE TABLE IF NOT EXISTS `tbl_task` (
-  `task_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `tbl_task` (
+  `task_id` int(11) NOT NULL,
   `task_date_week` varchar(11) NOT NULL,
   `task_date` varchar(25) NOT NULL,
   `task_time` varchar(20) NOT NULL,
   `task_type` varchar(25) NOT NULL,
   `task_location` varchar(100) NOT NULL,
   `task_fee` varchar(10) NOT NULL,
-  `task_officials` varchar(20) NOT NULL,
-  PRIMARY KEY (`task_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  `task_officials` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_task`
@@ -81,27 +77,76 @@ INSERT INTO `tbl_task` (`task_id`, `task_date_week`, `task_date`, `task_time`, `
 -- Table structure for table `tbl_user`
 --
 
-DROP TABLE IF EXISTS `tbl_user`;
-CREATE TABLE IF NOT EXISTS `tbl_user` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `tbl_user` (
+  `user_id` int(11) NOT NULL,
   `user_name` varchar(20) NOT NULL,
   `user_pass` varchar(20) NOT NULL,
-  `user_fname` varchar(250) NOT NULL,
-  `user_lname` varchar(250) NOT NULL,
-  `user_email` varchar(250) NOT NULL,
-  `user_gender` varchar(24) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+  `user_fname` varchar(20) NOT NULL,
+  `user_lname` varchar(20) NOT NULL,
+  `user_email` varchar(30) NOT NULL,
+  `user_gender` varchar(5) NOT NULL DEFAULT '0',
+  `user_level` int(11) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_fname`, `user_lname`, `user_email`, `user_gender`) VALUES
-(1, 'spiderman', 'marvel', 'Peter', 'Parker', 'spiderpp@gmail.com', '0'),
-(2, 'batman', 'dc', 'Bruce', 'Wayne', 'batmanbw@yahoo.com', '0'),
-(3, 'harley', 'joker', 'Harley', 'Quinn', 'harleyq@gmail.com', '1'),
-(4, 'deadpool', 'vanessa', 'Wade', 'Wilson', 'dp@gmail.com', '0');
+INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_fname`, `user_lname`, `user_email`, `user_gender`, `user_level`) VALUES
+(1, 'shield1', 'shield1', 'Nick', 'Fury', 'nn@hotmail.com', '0', 1),
+(2, 'sheild2', 'sheild2', 'Peggy', 'Carter', 'pc@hotmail.com', '1', 1),
+(3, 'gotham', 'gotham', 'Alfred', 'Pennyworth', 'ap@bat.com', '1', 1),
+(4, 'deadpool', 'vanessa', 'Wade', 'Wilson', 'dp@gmail.com', '0', 0),
+(5, 'spiderman', 'marvel', 'Peter', 'Parker', 'spiderpp@gmail.com', '0', 0),
+(6, 'batman', 'dc', 'Bruce', 'Wayne', 'batmanbw@yahoo.com', '0', 0),
+(7, 'harley', 'joker', 'Harley', 'Quinn', 'harleyq@gmail.com', '1', 0),
+(8, 'test', 'test', 'test', 'test', 'test@gmail.com', '2', 0),
+(9, 'superman', 'superman', 'Clark', 'Kent', 'ck@super.com', '0', 0),
+(10, 'incredible', 'incredible', 'Robert', 'Parr', 'robertbobparr@yahoo.com', '1', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tbl_class`
+--
+ALTER TABLE `tbl_class`
+  ADD PRIMARY KEY (`class_id`);
+
+--
+-- Indexes for table `tbl_task`
+--
+ALTER TABLE `tbl_task`
+  ADD PRIMARY KEY (`task_id`);
+
+--
+-- Indexes for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbl_class`
+--
+ALTER TABLE `tbl_class`
+  MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `tbl_task`
+--
+ALTER TABLE `tbl_task`
+  MODIFY `task_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

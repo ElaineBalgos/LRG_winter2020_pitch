@@ -11,17 +11,39 @@
     <!-- Montserrat font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        footer{
+            position: relative;
+        }
+        .topbtn{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            display: none;
+        }
+        .topbtn img{
+            width: 100px;
+        }
+        @media screen and (max-width: 860px) {
+            .topbtn img{
+                width:80px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <main id="app">
         <div id="page">
 
-            <headercomp v-if="!isActive('/login')" :auth="authenticated" :uname="username" :route="$router.currentRoute.path" @setauth="setAuthentication"></headercomp>
+            <headercomp v-if="!isActive('/login')" :auth="authenticated" :uname="username"
+                :route="$router.currentRoute.path"></headercomp>
 
-            <router-view @setauth="setAuthentication"></router-view>
-            
-            <footercomp v-if="!isActive('/login')" :auth="authenticated" :route="$router.currentRoute.path"></footercomp>
+            <router-view></router-view>
+
+            <footercomp v-if="!isActive('/login')" :auth="authenticated" :route="$router.currentRoute.path">
+            </footercomp>
+
         </div>
 
     </main>

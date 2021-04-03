@@ -1027,12 +1027,25 @@ footer .info {
 .contact .contact-form .title h2 {
   font-size: 48px;
   color: #970404;
-  margin-bottom: 20px;
 }
 .contact .contact-form .title p {
   line-height: 1.8;
   color: #ddd;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: 500;
+}
+.contact .contact-form .title span {
+  color: red;
+}
+.contact .contact-form .title #msg {
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 .contact .contact-form .item {
   margin: 20px 0;
@@ -1246,7 +1259,7 @@ footer .info {
   background-color: rgba(43, 43, 43, 0.8);
   width: 500px;
   margin: auto;
-  padding: 10px 50px;
+  padding: 50px 50px 10px 50px;
 }
 .login .login-box h2 {
   color: white;
@@ -1273,9 +1286,9 @@ footer .info {
   margin-bottom: 20px;
 }
 .login .login-box form .item input {
-  padding: 10px;
+  padding: 14px;
   width: 100%;
-  border-radius: 6px;
+  border: none;
   border-color: white;
   color: black;
 }
@@ -1360,6 +1373,11 @@ footer .info {
 .profile .right h2 {
   font-size: 50px;
   margin-bottom: 30px;
+}
+.profile .right div form #msg {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 16px;
 }
 .profile .right div form p {
   margin: 20px 0;
@@ -1697,6 +1715,176 @@ footer .info {
   }
   .reminder footer .map {
     display: block;
+  }
+}
+.members {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  background-color: #202020;
+  padding: 50px 0 100px;
+}
+.members h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.members .calendar .msg {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.members .calendar table {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.members .calendar table th,
+.members .calendar table td {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.members .calendar table thead tr th {
+  background-color: #CB2025;
+  padding: 20px 10px;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+.members .calendar table tbody {
+  cursor: default;
+}
+.members .calendar table tbody tr td {
+  background-color: white;
+  padding: 10px;
+  white-space: nowrap;
+}
+.members .calendar table tbody tr td input {
+  text-align: center;
+  align-items: center;
+}
+.members .calendar table tbody tr td select {
+  border: none;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.members .calendar table tbody tr td .edit-btn, .members .calendar table tbody tr td .delete-btn {
+  font-size: small;
+  padding: 5px 10px;
+  border: 1px solid #333333;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  filter: grayscale(100%);
+}
+.members .calendar table tbody tr td .edit-btn:hover, .members .calendar table tbody tr td .delete-btn:hover, .members .calendar table tbody tr td .save-btn:hover {
+  filter: grayscale(0);
+}
+.members .calendar table tbody tr td .edit-btn {
+  border: 1px solid #ffcc00;
+  background-color: #ffcc00;
+  color: #202020;
+}
+.members .calendar table tbody tr td .delete-btn {
+  border: 1px solid #cc3300;
+  background-color: #cc3300;
+  color: white;
+}
+.members .calendar table tbody tr td .save-btn {
+  font-size: small;
+  padding: 5px 10px;
+  border: 1px solid #333333;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border: 1px solid #339900;
+  background-color: #339900;
+  color: white;
+}
+.members .calendar table tbody tr td .delete-btn-disabled:hover {
+  filter: grayscale(100%);
+  cursor: default;
+}
+.members .calendar table tbody tr td .star {
+  color: red;
+  font-style: bold;
+}
+.members .calendar table tbody tr td .add {
+  color: #339900;
+}
+.members .c2 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .members {
+    margin-top: 0;
+    padding: 50px 0 0;
+  }
+  .members .main-header.log-in {
+    background-color: #BE0711;
+  }
+  .members h2 {
+    text-align: center;
+  }
+  .members .c1 {
+    display: none;
+  }
+  .members .c2 {
+    display: block;
+  }
+  .members .c2 .item {
+    border-bottom: 5px solid white;
+    margin-bottom: 40px;
+  }
+  .members .c2 .item:nth-last-child(1) {
+    border-bottom: none;
+  }
+  .members .c2 .item .note {
+    margin-bottom: 15px;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+  }
+  .members .c2 .item p {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+  .members .c2 .item p span {
+    font-family: "Montserrat", sans-serif;
+  }
+  .members .c2 .item p:nth-child(even) span:nth-child(1) {
+    background-color: #CB2025;
+    font-style: italic;
+  }
+  .members .c2 .item p:nth-child(odd) span:nth-child(1) {
+    background-color: #3D3D3D;
+    font-style: italic;
+  }
+  .members .c2 .item p span {
+    display: inline-block;
+    width: 150px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .members .c2 .item p span:nth-child(1) {
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+  }
+  .members .c2 .item p span:nth-child(2) {
+    color: gray;
+    flex-grow: 1;
+  }
+  .members .c2 .item hr {
+    border: 1px solid white;
+    background: white;
   }
 }
 

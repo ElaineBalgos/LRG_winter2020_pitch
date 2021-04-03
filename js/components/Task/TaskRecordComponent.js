@@ -3,8 +3,7 @@ export default {
 
     props: ["task"],
 
-    template:
-    `
+    template:`
     <tr>
         <td>
             <p>{{ date_week }}</p>
