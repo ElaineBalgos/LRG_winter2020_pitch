@@ -12,9 +12,26 @@ Motion Designer : Ruben Osorio<br>
 Frontend Developer :Guangli Li<br>
 Backend Developer : Shan-li Wang <br>
 
-# Live Demo
+# How To Run
 
-[TEST SITE](https://londonreferees.com/#/)<br>
+1. :link: [Live Demo](https://londonreferees.com/)
+
+2. **Docker**: (Download files and import database first)
+
+```
+docker-compose up
+```
+
+3. **Wamp/Mamp** (Download files and import database first)
+
+## Password
+
+| User Type        | Username           | Password  |
+| ------------- |:-------------:| -----:|
+| Admin  | shield1 | shield1 |
+| Admin  | shield2     |   shield2 |
+| Member | spiderman      |    marvel |
+| Member | batman      |    dc |
 
 # Prototypes
 
