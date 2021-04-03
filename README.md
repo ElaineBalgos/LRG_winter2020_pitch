@@ -14,15 +14,14 @@ Backend Developer : Shan-li Wang <br>
 
 # How To Run
 
-1. :link: [Live Demo](https://londonreferees.com/)
 
-2. **Docker**: (Download files and import database first)
+1. **Docker**: (Download files and import database first)
 
 ```
 docker-compose up
 ```
 
-3. **Wamp/Mamp** (Download files and import database first)
+2. **Wamp/Mamp** (Download files and import database first)
 
 ## Password
 
