@@ -4,7 +4,7 @@ export default {
     template:`
         <div class="home">
             <div class="slogn">
-                <video src="./media/home.mp4" controls></video>
+                <video src="./media/home.mp4" controls muted autoplay="autoplay"></video>
             </div>
             <div class="our-mission">
                 <div class="container">
