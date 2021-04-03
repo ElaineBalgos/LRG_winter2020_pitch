@@ -96,7 +96,7 @@ import Footer from "./components/Footer/FooterComponent.js";
             }
         ]
     });
-    var four;
+
     const vm = new Vue({
         data: {
             authenticated: localStorage.getItem("user_id") === null ? false : true,
@@ -108,42 +108,8 @@ import Footer from "./components/Footer/FooterComponent.js";
         created: function () {
             console.log("here");
         },
-        mounted() {
-            window.addEventListener("scroll", function () {
-                var top = document.documentElement.scrollTop;
-                if (top >= 100) {
-                    document.querySelector('.topbtn').style.display = 'block'
-                } else {
-                    document.querySelector('.topbtn').style.display = 'none'
-                }
-            })
-            document.querySelector('.topbtn').addEventListener('click', function () {
-                Topfun()
-            })
 
-            function Topfun() {
-                four = setInterval(FourscrollBy, 10);
-            }
-            function FourscrollBy(eachHeight) {
-                if (document.documentElement && document.documentElement.scrollTop) //IE
-                {
-                    if (document.documentElement.scrollTop <= 0) {
-                        clearInterval(four);
-                    } else {
-                        window.scrollBy(0, -30);
-                    }
-                } else { //Chrome不支持documentElement.scrollTop
-                    if (document.body.scrollTop <= 0) {
-                        clearInterval(four);
-                        document.querySelector('.top').style.display = 'none'
-                    } else {
-                        window.scrollBy(0, -30);
-                    }
-                }
-            }
-        },
         methods: {
-
             isActive(route) {
                 return this.$router.currentRoute.path === route;
             },

@@ -8,9 +8,9 @@ export default {
             <h2><router-link :to="{ name: 'Home' }"><img src="./img/logo.png" alt=""></router-link></h2>
             <nav class="flex-align-center">
                 <ul class="flex menus">
-                    <li><router-link :to="{ name: 'Home' }">HOME</router-link></li>
-                    <li><router-link :to="{ name: 'About' }">ABOUT</router-link></li>
-                    <li><router-link :to="{ name: 'Contact' }">CONTACT</router-link></li>
+                    <li><router-link :to="{ name: 'Home' }">Home</router-link></li>
+                    <li><router-link :to="{ name: 'About' }">About</router-link></li>
+                    <li><router-link :to="{ name: 'Contact' }">Contact</router-link></li>
                 </ul>
                 <div class="menus-mobile">
                     <div class="menu-icon" @click="toggleHamburgerMenu"><img src="./img/menu.png" alt=""></div>

@@ -128,10 +128,11 @@ export default {
                         console.log("edit user info failed");
                         this.displayMsg = data;
                     }
-                })
+                })   
                 .catch(err => console.error(err));
             } else {
                 this.displayMsg = "Edit failed... Please fill out all fields ...";
+                this.getCurrUser();
                 this.input.username = this.user.user_name;
                 this.input.password =  "";
                 this.input.email = this.user.user_email;

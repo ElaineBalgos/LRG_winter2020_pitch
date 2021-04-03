@@ -3,8 +3,8 @@ export default {
 
     props: ["auth"],
 
-    template:
-        `
+    template: 
+    `
     <footer>
         <div v-if="!auth" class="map">
             <div class="container flex-between">
@@ -32,9 +32,6 @@ export default {
         <div class="info">
             © 2021 LRG. All Rights Reserved.
         </div>
-        <a href="javascript:;" class="topbtn">
-            <img src="./img/top.png" alt="">
-        </a>
     </footer>
     `
 }

@@ -2,10 +2,10 @@
 -- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: mysql
--- Generation Time: Apr 02, 2021 at 05:20 PM
--- Server version: 10.3.27-MariaDB-1:10.3.27+maria~focal
--- PHP Version: 7.4.15
+-- 主機： mysql
+-- 產生時間： 2021 年 04 月 03 日 19:28
+-- 伺服器版本： 10.3.27-MariaDB-1:10.3.27+maria~focal
+-- PHP 版本： 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_lrg`
+-- 資料庫： `db_lrg`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_class`
+-- 資料表結構 `tbl_class`
 --
 
 CREATE TABLE `tbl_class` (
@@ -36,7 +36,7 @@ CREATE TABLE `tbl_class` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_class`
+-- 傾印資料表的資料 `tbl_class`
 --
 
 INSERT INTO `tbl_class` (`class_id`, `class_topic`, `class_length`, `class_description`, `class_video`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `tbl_class` (`class_id`, `class_topic`, `class_length`, `class_descr
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_task`
+-- 資料表結構 `tbl_task`
 --
 
 CREATE TABLE `tbl_task` (
@@ -62,7 +62,7 @@ CREATE TABLE `tbl_task` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_task`
+-- 傾印資料表的資料 `tbl_task`
 --
 
 INSERT INTO `tbl_task` (`task_id`, `task_date_week`, `task_date`, `task_time`, `task_type`, `task_location`, `task_fee`, `task_officials`) VALUES
@@ -74,7 +74,7 @@ INSERT INTO `tbl_task` (`task_id`, `task_date_week`, `task_date`, `task_time`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- 資料表結構 `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -89,12 +89,12 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tbl_user`
+-- 傾印資料表的資料 `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_fname`, `user_lname`, `user_email`, `user_gender`, `user_level`) VALUES
 (1, 'shield1', 'shield1', 'Nick', 'Fury', 'nn@hotmail.com', '0', 1),
-(2, 'sheild2', 'sheild2', 'Peggy', 'Carter', 'pc@hotmail.com', '1', 1),
+(2, 'shield2', 'shield2', 'Peggy', 'Carter', 'pc@hotmail.com', '1', 1),
 (3, 'gotham', 'gotham', 'Alfred', 'Pennyworth', 'ap@bat.com', '1', 1),
 (4, 'deadpool', 'vanessa', 'Wade', 'Wilson', 'dp@gmail.com', '0', 0),
 (5, 'spiderman', 'marvel', 'Peter', 'Parker', 'spiderpp@gmail.com', '0', 0),
@@ -105,48 +105,48 @@ INSERT INTO `tbl_user` (`user_id`, `user_name`, `user_pass`, `user_fname`, `user
 (10, 'incredible', 'incredible', 'Robert', 'Parr', 'robertbobparr@yahoo.com', '1', 0);
 
 --
--- Indexes for dumped tables
+-- 已傾印資料表的索引
 --
 
 --
--- Indexes for table `tbl_class`
+-- 資料表索引 `tbl_class`
 --
 ALTER TABLE `tbl_class`
   ADD PRIMARY KEY (`class_id`);
 
 --
--- Indexes for table `tbl_task`
+-- 資料表索引 `tbl_task`
 --
 ALTER TABLE `tbl_task`
   ADD PRIMARY KEY (`task_id`);
 
 --
--- Indexes for table `tbl_user`
+-- 資料表索引 `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
 --
 
 --
--- AUTO_INCREMENT for table `tbl_class`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `tbl_class`
 --
 ALTER TABLE `tbl_class`
   MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `tbl_task`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `tbl_task`
 --
 ALTER TABLE `tbl_task`
   MODIFY `task_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
