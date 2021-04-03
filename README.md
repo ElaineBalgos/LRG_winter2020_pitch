@@ -5,7 +5,7 @@
 
 A revamp of London Referees Group's official website. It includes updating content, layout, and improving user experience and navigation for better conversions and site performance. The main goal is to improve the usability of the website for its members, provides information for future officials, and encourage users to apply for their existing/upcoming programs.<br>
 
-This is a collaboration of graduating students of Interactive Media<br>
+This is a collaboration of graduating students of Interactive Media Design program<br>
 Project Manager : Elaine Balgos<br>
 Graphic Designer : Xindi Lu<br>
 Motion Designer : Ruben Osorio<br>
