@@ -1,8 +1,7 @@
 export default {
     name: "TheContactPage",
 
-    template:
-    `
+    template: `
     <div class="contact">
         <div class="lets-chat">
             <div class="inner"></div>
@@ -95,6 +94,7 @@ export default {
                 this.input.reason.trimStart() !== "") {
                 
                 let contactData = new FormData();
+                contactData.append("editor", "visitor");
                 contactData.append("fname", this.input.firstname.trimStart());
                 contactData.append("lname", this.input.lastname.trimStart());
                 contactData.append("email", this.input.email.trimStart());

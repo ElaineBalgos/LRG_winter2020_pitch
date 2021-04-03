@@ -8,22 +8,17 @@ export default {
 
     template:`
     <visitorheader v-if="!auth || (auth && routes1.includes(route))" ></visitorheader>
-    <userheader v-else @logout="hasLoggedOut" :username="uname"></userheader>
-    `,
+    <userheader v-else :username="uname"></userheader>
+    `,  
 
     data: function(){
         return {
             routes1: ["/", "/about", "/contact"]//,
-            // routes2: ["/profile", "/classes", "/task", "/reminder"]//,
         }
     },
 
     
     methods: {
-        hasLoggedOut(msg){
-            console.log(msg);
-            this.$emit("setauth", false, {});
-        }
     },
 
     components: {

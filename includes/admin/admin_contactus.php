@@ -17,7 +17,7 @@ if (isset($_POST["fname"]) && isset($_POST["lname"]) &&
     //Sending email to our group
     $email_to = "lrg@londonrefereesgroup.com";
     $email_from = $data["email"];
-    $email_subject = "Question Enquiry";
+    $email_subject = "General Inquiries";
     $email_message = sprintf("<html> <h2>Question Enquiry from %s %s</h2>", $data["fname"], $data["lname"]);
     $email_message .= sprintf("%s <br><br><br> </html>", $data["message"]);
 

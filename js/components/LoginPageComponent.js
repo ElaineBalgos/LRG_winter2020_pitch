@@ -63,12 +63,13 @@ export default {
                 })
                 .then(res => res.json())
                 .then(data => {
+                    console.log(data);
                     if (typeof data === "object") {
                         console.log("login successfully");
-                        console.log(data);
-                        this.$emit("setauth", true, data);
+                        this.$root.setAuthentication(true, data);
                         localStorage.setItem("user_id", data.user_id);
                         localStorage.setItem("user_name", data.user_name);
+                        localStorage.setItem("user_level", data.user_level);
                         
                         this.$router.replace({ name: "UserProfile" }); 
 

@@ -50,7 +50,7 @@ export default {
     methods: {
         logout(){
             localStorage.clear();
-            this.$emit("logout", "user has logged out...");
+            this.$root.setAuthentication(false, {});
             this.$router.replace({ name: "Home" });
         },
 

@@ -3,13 +3,9 @@ class Database
 {
     // Note: specify your own database credentials
     private $host = "localhost";
-
     private $db_name = "db_lrg";
-
     private $username = "root";
-
-    private $password = "123456";
-
+    private $password = "root";
     # 1. Add a new private statice variable
     private static $instance = null;
 

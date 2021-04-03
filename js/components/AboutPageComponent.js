@@ -1,11 +1,10 @@
 export default {
     name: "TheAboutPage",
 
-    template:
-    `
+    template: `
     <div class="about">
         <div class="slogn">
-            <video src="./media/about.mp4" controls></video>
+            <video src="./media/about.mp4" controls ></video>
         </div>
         <div class="our-story">
             <div class="container">
@@ -107,7 +106,7 @@ export default {
                 </div>
                 <div class="btn">
                     <router-link class="link1" :to="{ name: 'Contact' }">More Questions? Click HERE to Contact Us!</router-link>
-                    <router-link class="link2" :to="{ name: 'Contact' }">CONTACT US --></router-link>
+                    <router-link class="link2" :to="{ name: 'Contact' }">CONTACT US</router-link>
                     <!-- <a class="link1" href="./contact.html">More Questions? Contact Us!</a>
                     <a class="link2" href="./contact.html">CONTACT US</a> -->
                 </div>
@@ -116,10 +115,10 @@ export default {
     </div>
     `,
 
-    created: function() {
+    created: function () {
         console.log("About page created");
     },
-    mounted:function(){
-        document.body.scrollTop=document.documentElement.scrollTop=0;
+    mounted: function () {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 }
